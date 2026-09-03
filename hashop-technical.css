@@ -1,0 +1,156 @@
+/* HaShop — technical deep dive */
+.hashop-technical-shell{
+  --tech-accent:#36c7b2;
+  --tech-panel:#1a2425;
+  --tech-panel-strong:#202d2d;
+  --tech-line:#365050;
+}
+.hashop-technical-shell .technical-action--primary{color:#10201d}
+.hashop-technical-shell .technical-action--primary:hover{
+  border-color:#73e2d1;
+  background:#73e2d1;
+  color:#10201d;
+}
+.technical-repo-dropdown{
+  position:relative;
+  min-width:245px;
+}
+.technical-repo-trigger{
+  width:100%;
+  margin:0;
+  appearance:none;
+  -webkit-appearance:none;
+  border:1px solid #59646a;
+  background:transparent;
+  color:#e7e1d8;
+  font:inherit;
+  text-align:left;
+  cursor:pointer;
+}
+.technical-repo-trigger:hover,
+.technical-repo-trigger:focus-visible{
+  border-color:#9aa4a9;
+  background:#222a2e;
+  color:#fff;
+}
+.technical-repo-trigger:focus-visible{
+  outline:2px solid var(--tech-accent);
+  outline-offset:3px;
+}
+.repo-caret{
+  font-size:20px;
+  line-height:1;
+  transition:transform .18s ease;
+}
+.technical-repo-menu{
+  position:absolute;
+  z-index:20;
+  top:calc(100% - 1px);
+  left:0;
+  width:100%;
+  min-width:270px;
+  padding:7px;
+  border:1px solid #596a69;
+  background:#172120;
+  box-shadow:0 18px 34px #080d0d99;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(7px);
+  pointer-events:none;
+  transition:opacity .16s ease,transform .16s ease,visibility .16s ease;
+}
+.technical-repo-menu a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:10px 11px;
+  border-bottom:1px solid #2d4140;
+  color:#d8e3e0;
+  font-size:13px;
+  font-weight:500;
+  text-decoration:none;
+}
+.technical-repo-menu a:last-child{border-bottom:0}
+.technical-repo-menu a span:last-child{color:var(--tech-accent)}
+.technical-repo-menu a:hover,.technical-repo-menu a:focus-visible{
+  background:#223130;
+  color:#fff;
+  outline:0;
+}
+.technical-repo-dropdown:hover .technical-repo-menu,
+.technical-repo-dropdown:focus-within .technical-repo-menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+.technical-repo-dropdown:hover .repo-caret,
+.technical-repo-dropdown:focus-within .repo-caret{transform:rotate(180deg)}
+.hashop-baseline-note{
+  border-left-color:var(--tech-accent);
+  background:#1c2928;
+}
+.hashop-baseline-note .warning-mark{
+  border-color:#438f84;
+  color:#7ce2d2;
+}
+.hashop-architecture-figure{
+  margin:58px 0 0;
+  border:1px solid var(--tech-line);
+  background:#edf2f1;
+}
+.hashop-architecture-viewport{overflow:auto;padding:18px}
+.hashop-architecture-viewport img{
+  display:block;
+  width:100%;
+  min-width:920px;
+  height:auto;
+}
+.hashop-architecture-figure figcaption{
+  display:grid;
+  grid-template-columns:minmax(190px,.35fr) 1fr;
+  gap:24px;
+  padding:18px 22px;
+  border-top:1px solid var(--tech-line);
+  background:#172020;
+}
+.hashop-architecture-figure figcaption strong{
+  color:#e9efec;
+  font-size:14px;
+  font-weight:600;
+}
+.hashop-architecture-figure figcaption span{
+  color:#9eacab;
+  font-size:13px;
+  line-height:1.55;
+}
+.hashop-service-table{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hashop-service-table article:last-child{
+  grid-column:1/-1;
+  min-height:155px;
+}
+.hashop-event-pipeline{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hashop-event-pipeline article{min-height:185px}
+.hashop-artifact-guide>div>p:not(.section-label){
+  max-width:530px;
+  margin:15px 0 0;
+  color:#9faeac;
+  font-size:14px;
+  line-height:1.65;
+}
+@media(max-width:1150px){
+  .hashop-service-table,.hashop-event-pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hashop-service-table article:last-child{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .hashop-architecture-figure figcaption{grid-template-columns:1fr}
+  .hashop-architecture-viewport{padding:10px}
+  .hashop-architecture-viewport img{min-width:760px}
+}
+@media(max-width:620px){
+  .technical-repo-dropdown{width:100%}
+  .technical-repo-menu{right:0;width:100%;min-width:0}
+  .hashop-service-table,.hashop-event-pipeline{grid-template-columns:1fr}
+  .hashop-service-table article:last-child{grid-column:auto}
+}

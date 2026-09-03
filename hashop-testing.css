@@ -1,0 +1,148 @@
+/* HaShop 3.3 — quality engineering case study */
+.hashop-testing-shell{
+  --tech-accent:#36c7b2;
+  --tech-panel:#182422;
+  --tech-panel-strong:#202d2b;
+  --tech-line:#36504d;
+  --qa-pass:#77d6a3;
+  --qa-warn:#f0af5e;
+  --qa-fail:#ef7d70;
+  --qa-blue:#90c9e8;
+}
+.testing-hero{padding-bottom:58px}
+.testing-result-strip{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin-top:44px;
+  border-top:1px solid var(--tech-line);
+  border-left:1px solid var(--tech-line);
+}
+.testing-result-strip>div{
+  min-height:126px;
+  padding:22px;
+  border-right:1px solid var(--tech-line);
+  border-bottom:1px solid var(--tech-line);
+  background:var(--tech-panel);
+}
+.testing-result-strip strong{display:block;color:var(--qa-pass);font-size:30px;font-weight:500;letter-spacing:-.04em}
+.testing-result-strip span{display:block;margin-top:16px;color:#acb8b4;font-size:12px;line-height:1.45}
+.testing-context{
+  display:grid;
+  grid-template-columns:58px 1fr;
+  gap:22px;
+  margin-top:24px;
+  padding:25px;
+  border-left:4px solid var(--tech-accent);
+  background:#1c2a28;
+}
+.testing-context>span{display:grid;place-items:center;width:52px;height:52px;border:1px solid #4d857d;color:#7de2d2;font:700 11px Consolas,'Courier New',monospace}
+.testing-context h2{margin:1px 0 8px;color:#f0ece4;font-size:18px;font-weight:600}
+.testing-context p{margin:0;color:#afbbb7;font-size:14px;line-height:1.65}
+.hashop-testing-shell .testing-toc{grid-template-columns:repeat(5,1fr)}
+
+.testing-pipeline{
+  display:grid;
+  grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;
+  align-items:stretch;
+  border-top:1px solid var(--tech-line);
+  border-bottom:1px solid var(--tech-line);
+}
+.testing-pipeline article{min-height:178px;padding:23px 19px;background:var(--tech-panel)}
+.testing-pipeline>i{align-self:center;padding:0 9px;color:#667d78;font-style:normal;font-size:20px}
+.testing-pipeline article>span,.testing-principles article>span{color:var(--tech-accent);font:700 10px/1 Consolas,'Courier New',monospace;letter-spacing:.13em}
+.testing-pipeline h3{margin:21px 0 9px;color:#ece8df;font-size:17px;font-weight:600}
+.testing-pipeline p{margin:0;color:#9da9a6;font-size:13px;line-height:1.58}
+.testing-principles{display:grid;grid-template-columns:repeat(3,1fr);margin-top:26px;border-top:1px solid var(--tech-line);border-left:1px solid var(--tech-line)}
+.testing-principles article{min-height:185px;padding:24px;border-right:1px solid var(--tech-line);border-bottom:1px solid var(--tech-line);background:#1b2725}
+.testing-principles h3{margin:22px 0 10px;color:#ede8df;font-size:18px;font-weight:600}
+.testing-principles p{margin:0;color:#a1adaa;font-size:13px;line-height:1.6}
+
+.testing-suite-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.testing-suite-grid>article{display:flex;min-height:450px;flex-direction:column;padding:29px;border:1px solid var(--tech-line);background:var(--tech-panel)}
+.testing-suite-head{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:23px;border-bottom:1px solid var(--tech-line)}
+.testing-suite-head span{color:var(--tech-accent);font:700 10px Consolas,'Courier New',monospace;letter-spacing:.12em}
+.testing-suite-head strong{color:var(--qa-pass);font-size:28px;font-weight:500}
+.testing-suite-grid h3{margin:27px 0 18px;color:#eee9e1;font-size:23px;font-weight:600}
+.testing-suite-grid ul{margin:0 0 25px;padding:0;list-style:none}
+.testing-suite-grid li{display:grid;grid-template-columns:30px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #2d413e;color:#acb8b4;font-size:13px;line-height:1.45}
+.testing-suite-grid li b{color:var(--qa-blue);font-weight:600}
+.testing-suite-grid>article>a,.testing-workflow-note>a{display:flex;justify-content:space-between;gap:18px;margin-top:auto;padding:14px 15px;border:1px solid #506965;color:#e2e8e5;font-size:13px;font-weight:600;text-decoration:none}
+.testing-suite-grid>article>a:hover,.testing-workflow-note>a:hover{border-color:var(--tech-accent);background:#21312e;color:#fff}
+.testing-proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:28px}
+.testing-proof{margin:0;border:1px solid var(--tech-line);background:#121a1b;overflow:hidden}
+.testing-proof img{display:block;width:100%;height:auto;background:#0e1011}
+.testing-proof figcaption{display:grid;gap:7px;padding:18px 20px;border-top:1px solid var(--tech-line);background:#1a2524}
+.testing-proof figcaption strong{color:#eee9e1;font-size:15px;font-weight:600}
+.testing-proof figcaption span{color:#9faca8;font-size:12.5px;line-height:1.55}
+.testing-proof--wide{margin-top:28px}
+.testing-proof--defect{border-color:#704641}
+.testing-proof--defect figcaption{border-top-color:#704641;background:#29201f}
+.testing-proof--defect figcaption strong{color:#f09a90}
+
+.testing-workflow{border-top:1px solid var(--tech-line)}
+.testing-workflow-step{display:grid;grid-template-columns:120px 190px 1fr;gap:25px;align-items:center;padding:22px 5px;border-bottom:1px solid var(--tech-line)}
+.testing-workflow-step>span{color:var(--tech-accent);font:700 10px Consolas,'Courier New',monospace;letter-spacing:.1em}
+.testing-workflow-step strong{color:#e7e2d9;font:500 17px Consolas,'Courier New',monospace}
+.testing-workflow-step p{margin:0;color:#a3afac;font-size:13px;line-height:1.5}
+.testing-workflow-note{display:grid;grid-template-columns:1fr 240px;gap:35px;align-items:center;margin-top:28px;padding:28px;border:1px solid var(--tech-line);background:#1b2826}
+.testing-workflow-note>div>span{color:var(--qa-pass);font:700 10px Consolas,'Courier New',monospace;letter-spacing:.12em}
+.testing-workflow-note h3{margin:15px 0 9px;color:#eee9e1;font-size:21px;font-weight:600}
+.testing-workflow-note p{margin:0;color:#a5b1ae;font-size:13px;line-height:1.6}
+
+.testing-defect-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--tech-line);border-left:1px solid var(--tech-line)}
+.testing-defect-grid article{min-height:205px;padding:24px;border-right:1px solid var(--tech-line);border-bottom:1px solid var(--tech-line);background:var(--tech-panel)}
+.testing-defect-grid article>span{color:var(--tech-accent);font:700 10px Consolas,'Courier New',monospace;letter-spacing:.12em}
+.testing-defect-grid strong{display:block;margin:29px 0 14px;color:#ede8e0;font-size:24px;font-weight:500}
+.testing-defect-grid p{margin:0;color:#9faca8;font-size:13px;line-height:1.55}
+.testing-defect-grid .testing-defect-actual{border-top:3px solid var(--qa-fail);background:#2a211f}
+.testing-defect-grid .testing-defect-actual>span,.testing-defect-grid .testing-defect-actual strong{color:#f0998f}
+.testing-defect-grid .testing-defect-pass{border-top:3px solid var(--qa-pass);background:#1d2923}
+.testing-defect-grid .testing-defect-pass>span,.testing-defect-grid .testing-defect-pass strong{color:var(--qa-pass)}
+.testing-diff{display:grid;grid-template-columns:.82fr 1.18fr;margin-top:28px;border:1px solid var(--tech-line);background:#151e1e}
+.testing-diff>div{padding:29px}
+.testing-diff h3{margin:20px 0 11px;color:#eee9e1;font-size:21px;font-weight:600}
+.testing-diff p{margin:0;color:#a6b1ae;font-size:13px;line-height:1.65}
+.testing-diff pre{margin:0;padding:28px;overflow:auto;border-left:1px solid var(--tech-line);background:#0e1516;color:#ef8f83;font:12.5px/1.7 Consolas,'Courier New',monospace;white-space:pre}
+
+.testing-evidence-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--tech-line);border-left:1px solid var(--tech-line)}
+.testing-evidence-grid article{min-height:180px;padding:25px;border-right:1px solid var(--tech-line);border-bottom:1px solid var(--tech-line);background:var(--tech-panel)}
+.testing-evidence-grid article>span{color:var(--tech-accent);font-size:11px;font-weight:700;letter-spacing:.12em}
+.testing-evidence-grid h3{margin:20px 0 10px;color:#eee9e1;font-size:18px;font-weight:600}
+.testing-evidence-grid p{margin:0;color:#a0aca9;font-size:13px;line-height:1.6}
+.testing-limitations{display:grid;grid-template-columns:1fr .82fr;gap:45px;margin-top:28px;padding:32px;border-left:4px solid var(--qa-warn);background:#29241d}
+.testing-limitations h3{margin:10px 0 11px;color:#f0e8db;font-size:22px;font-weight:600}
+.testing-limitations>div>p:not(.section-label){margin:0;color:#c2b7a7;font-size:14px;line-height:1.65}
+.testing-limitations ul{margin:0;padding:0;list-style:none;border-top:1px solid #5a4b37}
+.testing-limitations li{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid #5a4b37}
+.testing-limitations li span{color:#f1bb73;font:700 9px Consolas,'Courier New',monospace;letter-spacing:.08em}
+.testing-limitations li p{margin:0;color:#d0c5b5;font-size:12.5px;line-height:1.45}
+.testing-footer{border-top-color:var(--tech-accent)}
+.hashop-testing-shell .technical-action--primary{border-color:var(--tech-accent);background:var(--tech-accent);color:#10201d}
+.hashop-testing-shell .technical-action--primary:hover{border-color:#73e2d1;background:#73e2d1;color:#10201d}
+
+@media(max-width:1150px){
+  .hashop-testing-shell .testing-toc{grid-template-columns:repeat(3,1fr)}
+  .testing-pipeline{grid-template-columns:repeat(2,1fr)}
+  .testing-pipeline>i{display:none}
+  .testing-pipeline article{border-right:1px solid var(--tech-line);border-bottom:1px solid var(--tech-line)}
+  .testing-defect-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  .testing-result-strip{grid-template-columns:repeat(2,1fr)}
+  .testing-suite-grid,.testing-proof-grid,.testing-diff,.testing-limitations{grid-template-columns:1fr}
+  .testing-diff pre{border-left:0;border-top:1px solid var(--tech-line)}
+}
+@media(max-width:760px){
+  .hashop-testing-shell .testing-principles,
+  .hashop-testing-shell .testing-toc{grid-template-columns:1fr}
+  .testing-workflow-step{grid-template-columns:95px 1fr}
+  .testing-workflow-step p{grid-column:1/-1}
+  .testing-workflow-note{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .testing-result-strip,.testing-pipeline,.testing-defect-grid,.testing-evidence-grid{grid-template-columns:1fr}
+  .testing-context{grid-template-columns:1fr}
+  .testing-suite-grid>article{min-height:0;padding:23px}
+  .testing-diff pre{padding:20px;font-size:11px}
+  .testing-limitations{padding:25px}
+}

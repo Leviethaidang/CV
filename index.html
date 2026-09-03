@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Personal Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+  <aside id="sidebar">
+    <div class="sidebar-head no-logo">
+      <label class="search"><span>⌕</span><input id="search" placeholder="Search..."><button id="clear-search">×</button></label>
+    </div>
+    <div class="sidebar-scroll">
+      <ol class="topics" id="topics">
+        <li><a href="index.html" class="active">Personal Information</a></li>
+        <li class="has-children"><a href="placeholder.html?section=2&amp;project=empire-run">Highlighted Projects</a><ul class="project-submenu"><li class="project-node" data-project="empire-run"><div class="project-entry"><a href="placeholder.html?section=2&amp;project=empire-run"><span>1.</span> Empire Run</a><button class="project-toggle" type="button" aria-expanded="false" aria-controls="empire-run-children" aria-label="Show Empire Run subprojects"><span aria-hidden="true">›</span></button></div><ul class="project-child-menu" id="empire-run-children"><li><a href="placeholder.html?section=2&amp;project=empire-run&amp;subproject=1-1"><span>1.1</span> Technical Deep Dive</a></li><li><a href="placeholder.html?section=2&amp;project=empire-run&amp;subproject=1-2"><span>1.2</span> QA Retrospective</a></li></ul></li><li class="project-node" data-project="shorturl"><div class="project-entry"><a href="placeholder.html?section=2&amp;project=shorturl"><span>2.</span> ShortURL</a><button class="project-toggle" type="button" aria-expanded="false" aria-controls="shorturl-children" aria-label="Show ShortURL subprojects"><span aria-hidden="true">›</span></button></div><ul class="project-child-menu" id="shorturl-children"><li><a href="placeholder.html?section=2&amp;project=shorturl&amp;subproject=2-1"><span>2.1</span> Technical Deep Dive</a></li><li><a href="placeholder.html?section=2&amp;project=shorturl&amp;subproject=2-2"><span>2.2</span> Manual API Testing</a></li></ul></li><li class="project-node" data-project="hashop"><div class="project-entry"><a href="placeholder.html?section=2&amp;project=hashop"><span>3.</span> HaShop</a></div><ul class="project-child-menu" id="hashop-children"><li><a href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-1"><span>3.1</span> Technical Deep Dive</a></li><li><a href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-2"><span>3.2</span> Reproduction Guide</a></li><li><a href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-3"><span>3.3</span> Quality Engineering</a></li></ul></li></ul></li>
+      </ol>
+    </div>
+  </aside>
+  <main id="content">
+    <article class="home-page">
+      <h1>PERSONAL INFORMATION</h1>
+      <div class="student-profile">
+        <div class="student-info">
+          <p><strong>Full Name:</strong> <span>Le Viet Hai Dang</span></p>
+          <p><strong>Phone Number:</strong> <a href="tel:+84349806771">+84 349 806 771</a></p>
+          <p><strong>Email:</strong> <a href="mailto:Leviethaidang061104@gmail.com">Leviethaidang061104@gmail.com</a></p>
+          <p><strong>Address:</strong> <span>No. 01, Mac Dinh Chi Street, Tan Hoa Quarter, Di An City, Binh Duong Province</span></p>
+          <p><strong>University:</strong> <span>Ho Chi Minh City University of Technology</span></p>
+        </div>
+        <div class="student-photo"><img src="assets/avatar.jpg" alt="Le Viet Hai Dang"></div>
+      </div>
+
+      <section class="cv-section">
+        <h2>SUMMARY</h2>
+        <p>Recent Software Engineering graduate specializing in Software Testing, with practical experience in executing testing processes, identifying and logging bugs, and managing the bug life cycle in real-world projects. Seeking a Tester Intern position to apply functional testing skills, contribute to early bug detection, and ensure final products meet technical requirements.</p>
+      </section>
+
+      <section class="cv-section">
+        <h2>PROFESSIONAL SKILLS</h2>
+        <ul>
+          <li><strong>Testing Core:</strong> <span>Solid understanding of Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC). Proficient in Black-box Testing, Functional Testing, Regression Testing, and Exploratory Testing.</span></li>
+          <li><strong>Documentation & Reporting:</strong> <span>Drafting standard Bug Reports (Reproduction steps, Expected/Actual results), designing basic Test Cases, writing comprehensive Feedback Reports.</span></li>
+          <li>Familiar with Jira, Trello, Bugzilla, and Postman.</li>
+          <li><strong>Soft Skills:</strong> <span>Attention to detail, critical thinking to uncover edge cases, communication and teamwork skills with developers.</span></li>
+        </ul>
+      </section>
+
+      <section class="cv-section experience">
+        <h2>EXPERIENCE</h2>
+        <div class="experience-heading"><h3>WARGAMING - WORLD OF WARSHIP PROJECT</h3><strong>03/2023 – 09/2024</strong></div>
+        <p><strong>Role:</strong> <span>Game Tester</span><br><strong>Project:</strong> World of Warships (Wargaming)</p>
+        <p><strong>Overview:</strong> <span>Participated in Wargaming's Supertest program. Directly experienced and evaluated the quality of new content (warships, events, physical mechanics) in both Staging (closed server) and Production (live server) environments. Collaborated closely with the development team by reporting technical bugs and providing feedback to improve user experience prior to official releases.</span></p>
+        <ul>
+          <li><strong>Functional Testing:</strong> <span>Conducted black-box testing for new updates, events, and physical mechanics in the Staging environment prior to release.</span></li>
+          <li><strong>Bug Tracking & Reporting:</strong> <span>Identified, analyzed, and logged technical bugs (physics, graphical display, map terrain). Drafted precise Bug Reports including reproduction steps, environmental conditions, frequency, and severity to support the development team.</span></li>
+          <li><strong>UX & Playtesting:</strong> <span>Tested unreleased content in the Production environment (Live Server). Evaluated feasibility, difficulty, and overall experience to ensure the product met design expectations.</span></li>
+          <li><strong>Regression Testing:</strong> <span>Verified bugs fixed by the development team, ensuring they were thoroughly resolved without cross-affecting other system features.</span></li>
+          <li><strong>Exploratory Testing:</strong> <span>Proactively tested the system without pre-defined test cases in the Production environment to find hidden bugs (edge cases) and check the stability of the final product.</span></li>
+        </ul>
+      </section>
+    </article>
+    <a class="next" href="placeholder.html?section=2&amp;project=empire-run">›</a>
+  </main>
+  <div id="overlay"></div><script src="app.js"></script>
+</body></html>

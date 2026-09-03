@@ -1,0 +1,162 @@
+/* ShortURL — technical deep dive */
+.shorturl-technical-shell{
+  --tech-accent:#8f9cff;
+  --project-accent:var(--tech-accent);
+  --tech-panel:#1a2028;
+  --tech-panel-strong:#202733;
+  --tech-line:#3c4858;
+}
+.shorturl-technical-shell .technical-action--primary{color:#151822}
+.shorturl-technical-shell .technical-action--primary:hover{
+  border-color:#b8c0ff;
+  background:#b8c0ff;
+  color:#151822;
+}
+.shorturl-baseline-note{
+  border-left-color:var(--tech-accent);
+  background:#202234;
+}
+.shorturl-baseline-note .warning-mark{
+  border-color:#626fca;
+  color:#b9c0ff;
+}
+.shorturl-path-strip{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr) auto) minmax(0,1fr);
+  align-items:stretch;
+  border-top:1px solid var(--tech-line);
+  border-bottom:1px solid var(--tech-line);
+}
+.shorturl-path-strip article{
+  min-height:170px;
+  padding:23px 18px;
+  background:var(--tech-panel);
+}
+.shorturl-path-strip i{
+  align-self:center;
+  padding:0 10px;
+  color:#768194;
+  font-size:22px;
+  font-style:normal;
+}
+.shorturl-path-strip article>span,
+.shorturl-decision-grid article>span,
+.shorturl-health-grid article>span{
+  color:var(--tech-accent);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.12em;
+}
+.shorturl-path-strip h3,
+.shorturl-decision-grid h3,
+.shorturl-health-grid h3{
+  margin:18px 0 9px;
+  color:#ebe6df;
+  font-size:16px;
+  font-weight:600;
+}
+.shorturl-path-strip p,
+.shorturl-decision-grid p,
+.shorturl-health-grid p{
+  margin:0;
+  color:#9fa9b0;
+  font-size:13px;
+  line-height:1.58;
+}
+.shorturl-architecture-figure{
+  margin:58px 0 0;
+  border:1px solid var(--tech-line);
+  background:#fff;
+}
+.shorturl-architecture-viewport{overflow:auto;padding:18px}
+.shorturl-architecture-viewport img{
+  display:block;
+  width:100%;
+  min-width:760px;
+  height:auto;
+}
+.shorturl-architecture-figure figcaption{
+  display:grid;
+  grid-template-columns:minmax(210px,.38fr) 1fr;
+  gap:24px;
+  padding:18px 22px;
+  border-top:1px solid var(--tech-line);
+  background:#171d25;
+}
+.shorturl-architecture-figure figcaption strong{color:#edf0f5;font-size:14px;font-weight:600}
+.shorturl-architecture-figure figcaption span{color:#a3adb6;font-size:13px;line-height:1.55}
+.shorturl-generation-stats{margin-bottom:58px}
+.shorturl-code-card .code-keyword{color:#aeb7ff}
+.shorturl-collision-note p,
+.shorturl-runtime-note p{
+  margin:0;
+  color:#aeb6bf;
+  font-size:14px;
+  line-height:1.65;
+}
+.shorturl-collision-note{border-left-color:var(--tech-accent)}
+.shorturl-decision-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border-top:1px solid var(--tech-line);
+  border-left:1px solid var(--tech-line);
+}
+.shorturl-decision-grid article{
+  min-height:190px;
+  padding:24px 21px;
+  border-right:1px solid var(--tech-line);
+  border-bottom:1px solid var(--tech-line);
+  background:var(--tech-panel);
+}
+.shorturl-decision-grid+.code-explainer{margin-top:58px}
+.shorturl-security-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.shorturl-security-grid article{min-height:165px}
+.shorturl-secret-split{grid-template-columns:.8fr 1.2fr}
+.shorturl-secret-split .section-label{margin-bottom:14px}
+.shorturl-secret-split .code-tree{white-space:pre-wrap}
+.shorturl-health-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  border-top:1px solid var(--tech-line);
+  border-left:1px solid var(--tech-line);
+}
+.shorturl-health-grid article{
+  min-height:190px;
+  padding:27px 24px;
+  border-right:1px solid var(--tech-line);
+  border-bottom:1px solid var(--tech-line);
+  background:var(--tech-panel);
+}
+.shorturl-health-grid .is-ok{box-shadow:inset 0 3px #62d7c6}
+.shorturl-health-grid .is-degraded{box-shadow:inset 0 3px #e9b65f}
+.shorturl-health-grid .is-down{box-shadow:inset 0 3px #e07878}
+.shorturl-runtime-note{border-left-color:#62d7c6}
+.shorturl-delivery-flow{margin-top:0}
+.shorturl-stack-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.shorturl-stack-grid article{min-height:205px}
+.shorturl-source-guide>div>p:not(.section-label){
+  max-width:540px;
+  margin:15px 0 0;
+  color:#9fa9b2;
+  font-size:14px;
+  line-height:1.65;
+}
+.shorturl-technical-footer{border-top-color:var(--tech-accent)}
+@media(max-width:1150px){
+  .shorturl-path-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .shorturl-path-strip i{display:none}
+  .shorturl-path-strip article{border-right:1px solid var(--tech-line);border-bottom:1px solid var(--tech-line)}
+  .shorturl-decision-grid,.shorturl-security-grid,.shorturl-stack-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:900px){
+  .shorturl-secret-split{grid-template-columns:1fr}
+  .shorturl-health-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .shorturl-architecture-figure figcaption{grid-template-columns:1fr}
+  .shorturl-architecture-viewport{padding:10px}
+  .shorturl-architecture-viewport img{min-width:680px}
+}
+@media(max-width:620px){
+  .shorturl-path-strip,.shorturl-decision-grid,.shorturl-security-grid,.shorturl-stack-grid{grid-template-columns:1fr}
+}

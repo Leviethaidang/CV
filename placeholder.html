@@ -1,0 +1,2106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Empire Run — a 2D city-building and resource-management simulation built with Unity and C#.">
+  <title>Empire Run | Highlighted Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="shorturl.css">
+  <link rel="stylesheet" href="shorturl-technical.css">
+  <link rel="stylesheet" href="shorturl-testing.css">
+  <link rel="stylesheet" href="hashop-technical.css">
+  <link rel="stylesheet" href="hashop-reproduction.css">
+  <link rel="stylesheet" href="hashop-testing.css">
+</head>
+<body>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">☰</button>
+  <aside id="sidebar">
+    <div class="sidebar-head no-logo">
+      <label class="search"><span>⌕</span><input id="search" placeholder="Search..."><button id="clear-search" aria-label="Clear search">×</button></label>
+    </div>
+    <div class="sidebar-scroll">
+      <ol class="topics" id="topics">
+        <li><a href="index.html">Personal Information</a></li>
+        <li class="has-children"><a href="placeholder.html?section=2&amp;project=empire-run" class="active">Highlighted Projects</a>
+          <ul class="project-submenu">
+            <li class="project-node" data-project="empire-run">
+              <div class="project-entry">
+                <a href="placeholder.html?section=2&amp;project=empire-run"><span>1.</span> Empire Run</a>
+                <button class="project-toggle" type="button" aria-expanded="false" aria-controls="empire-run-children" aria-label="Show Empire Run subprojects"><span aria-hidden="true">›</span></button>
+              </div>
+              <ul class="project-child-menu" id="empire-run-children">
+                <li><a href="placeholder.html?section=2&amp;project=empire-run&amp;subproject=1-1"><span>1.1</span> Technical Deep Dive</a></li>
+                <li><a href="placeholder.html?section=2&amp;project=empire-run&amp;subproject=1-2"><span>1.2</span> QA Retrospective</a></li>
+              </ul>
+            </li>
+            <li class="project-node" data-project="shorturl">
+              <div class="project-entry">
+                <a href="placeholder.html?section=2&amp;project=shorturl"><span>2.</span> ShortURL</a>
+                <button class="project-toggle" type="button" aria-expanded="false" aria-controls="shorturl-children" aria-label="Show ShortURL subprojects"><span aria-hidden="true">›</span></button>
+              </div>
+              <ul class="project-child-menu" id="shorturl-children">
+                <li><a href="placeholder.html?section=2&amp;project=shorturl&amp;subproject=2-1"><span>2.1</span> Technical Deep Dive</a></li>
+                <li><a href="placeholder.html?section=2&amp;project=shorturl&amp;subproject=2-2"><span>2.2</span> Manual API Testing</a></li>
+              </ul>
+            </li>
+            <li class="project-node" data-project="hashop">
+              <div class="project-entry">
+                <a href="placeholder.html?section=2&amp;project=hashop"><span>3.</span> HaShop</a>
+              </div>
+              <ul class="project-child-menu" id="hashop-children">
+                <li><a href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-1"><span>3.1</span> Technical Deep Dive</a></li>
+                <li><a href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-2"><span>3.2</span> Reproduction Guide</a></li>
+                <li><a href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-3"><span>3.3</span> Quality Engineering</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </aside>
+
+  <main id="content" class="blank-page">
+    <nav class="project-edge-nav" aria-label="Page navigation"><a class="project-edge-arrow project-edge-prev" id="project-prev" href="index.html" aria-label="Previous page">‹</a><a class="project-edge-arrow project-edge-next" id="project-next" href="placeholder.html?section=2&amp;project=empire-run&amp;subproject=1-1" aria-label="Next page">›</a></nav>
+    <article class="project-shell" data-project-page="empire-run" hidden>
+      <header class="project-hero">
+        <div class="technical-eyebrow"><span>1.</span><span>Project overview</span></div>
+        <h1>Empire Run</h1>
+        <p class="project-deck">A systems-driven 2D city-building game where players turn isolated regions into a connected economy.</p>
+        <figure class="hero-shot">
+          <img src="assets/projects/empire-run/city-building.png" alt="Empire Run city-building interface with a building preview on the map">
+          <figcaption><span>Building placement, live resources and regional navigation in the main game view.</span></figcaption>
+        </figure>
+      </header>
+
+      <section class="project-intro" aria-labelledby="overview-title">
+        <div>
+          <p class="section-label">Case study</p>
+          <h2 id="overview-title">From an empty map to a living economy</h2>
+          <p class="project-lead">Empire Run is a playable prototype inspired by Anno 1800. I designed and implemented the complete gameplay loop: placing buildings, supplying residents, balancing production chains, connecting regions and submitting completed runs to an online leaderboard.</p>
+          <p>As the full-stack developer, I owned the project from simulation architecture and gameplay UI to account services and the companion website.</p>
+        </div>
+        <dl class="project-facts">
+          <div><dt>Role</dt><dd>Full-stack Developer</dd></div>
+          <div><dt>Project type</dt><dd>2D city-building & resource management</dd></div>
+          <div><dt>Scope</dt><dd>Game client + online services + website</dd></div>
+          <div><dt>Recognition</dt><dd>Semifinalist — HUTECH IT Got Talent</dd></div>
+        </dl>
+      </section>
+
+      <section class="project-metrics" aria-label="Project scale">
+        <div><strong>208</strong><span>C# scripts</span></div>
+        <div><strong>29K+</strong><span>lines of gameplay code</span></div>
+        <div><strong>35</strong><span>resource, currency & workforce types</span></div>
+        <div><strong>~30</strong><span>tracked achievements</span></div>
+      </section>
+
+      <section class="project-section" aria-labelledby="gameplay-title">
+        <div class="section-heading">
+          <p class="section-label">01 — <span>Gameplay systems</span></p>
+          <h2 id="gameplay-title">The city reacts to every decision</h2>
+          <p>Buildings are not isolated objects. Homes consume goods and grow their population, factories draw workers and inputs, roads establish service coverage, and each change propagates through the regional economy.</p>
+        </div>
+
+        <div class="media-grid media-grid--portrait">
+          <figure class="project-shot">
+            <div class="image-viewport"><img src="assets/projects/empire-run/residence-needs.png" alt="Farmer House panel showing supplied needs and population growth"></div>
+            <figcaption><strong>Population & needs</strong><span>Residences track supplied goods, occupancy and tax income in real time.</span></figcaption>
+          </figure>
+          <figure class="project-shot">
+            <div class="image-viewport"><img src="assets/projects/empire-run/production-cycle.png" alt="Fishing Harbor panel showing a completed production cycle"></div>
+            <figcaption><strong>Production cycles</strong><span>Factories expose inputs, outputs, efficiency, operating cost and workforce demand.</span></figcaption>
+          </figure>
+        </div>
+
+        <figure class="project-shot project-shot--wide">
+          <div class="image-viewport"><img src="assets/projects/empire-run/regional-dashboard.png" alt="Regional dashboard comparing expected and actual supply statistics"></div>
+          <figcaption><strong>Regional intelligence</strong><span>Expected demand and actual supply are compared per region to reveal shortages before they cascade.</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="project-section" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <p class="section-label">02 — <span>Technical architecture</span></p>
+          <h2 id="architecture-title">Reusable systems behind the simulation</h2>
+          <p>The project uses data-driven building definitions and reusable runtime behaviours, allowing new buildings to share proven logic without duplicating entire implementations.</p>
+        </div>
+        <div class="architecture-grid">
+          <article><span>01</span><h3>Data-driven buildings</h3><p>ScriptableObject definitions separate balance data from runtime behaviour and support upgrades, costs and placement rules.</p></article>
+          <article><span>02</span><h3>Six production archetypes</h3><p>Shared behaviour covers raw producers, processors, farms, livestock, influence zones and resource extractors.</p></article>
+          <article><span>03</span><h3>Event-driven simulation</h3><p>Road connections, service coverage, population and storage changes update dependent systems without tightly coupling them.</p></article>
+          <article><span>04</span><h3>Maritime A* routing</h3><p>Cargo ships navigate water routes between regions, transporting selected goods through configurable trade cycles.</p></article>
+          <article><span>05</span><h3>Persistent game state</h3><p>JSON save data preserves regions, buildings, resources and progression; REST services connect accounts and rankings.</p></article>
+          <article><span>06</span><h3>Player-facing feedback</h3><p>Building panels, statistics, notifications and progress indicators make a complex economy understandable at a glance.</p></article>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="progress-title">
+        <div class="section-heading">
+          <p class="section-label">03 — <span>Progression & goals</span></p>
+          <h2 id="progress-title">A complete loop, not only a sandbox</h2>
+          <p>Achievements guide first-time actions and long-term milestones. A finished run records completion time and lets the player submit the result to the leaderboard.</p>
+        </div>
+        <div class="media-grid">
+          <figure class="project-shot">
+            <div class="image-viewport"><img src="assets/projects/empire-run/achievements.png" alt="Empire Run achievement screen with a list of progression milestones"></div>
+            <figcaption><strong>Achievement framework</strong><span>Milestones cover settlement, production, wealth and inter-region logistics.</span></figcaption>
+          </figure>
+          <figure class="project-shot crop-right">
+            <div class="image-viewport"><img src="assets/projects/empire-run/victory.png" alt="Victory dialog showing completion time and leaderboard submission"></div>
+            <figcaption><strong>Run completion</strong><span>Victory captures the final time and bridges the game directly to competitive ranking.</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="online-title">
+        <div class="section-heading">
+          <p class="section-label">04 — <span>Online ecosystem</span></p>
+          <h2 id="online-title">The experience continues outside Unity</h2>
+          <p>The game connects to account and leaderboard services, while a responsive companion website presents the project and published completion times.</p>
+        </div>
+        <div class="media-grid media-grid--three">
+          <figure class="project-shot">
+            <div class="image-viewport"><img src="assets/projects/empire-run/login.png" alt="Empire Run login and account creation interface"></div>
+            <figcaption><strong>Account access</strong><span>Sign-in and account creation connect players to saved progress and online features.</span></figcaption>
+          </figure>
+          <figure class="project-shot browser-crop">
+            <div class="image-viewport"><img src="assets/projects/empire-run/website-home.png" alt="Empire Run companion website home page"></div>
+            <figcaption><strong>Companion website</strong><span>A responsive web presence extends the visual identity of the game.</span></figcaption>
+          </figure>
+          <figure class="project-shot browser-crop">
+            <div class="image-viewport"><img src="assets/projects/empire-run/leaderboard.png" alt="Empire Run web leaderboard with ranked completion time"></div>
+            <figcaption><strong>Web leaderboard</strong><span>Submitted runs are ranked by completion time and displayed with player information.</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-outcome" aria-labelledby="outcome-title">
+        <p class="section-label">05 — <span>Result</span></p>
+        <h2 id="outcome-title">A playable end-to-end prototype</h2>
+        <p>Empire Run reached a complete core loop—from the first building to a submitted victory—and advanced to the semifinal round of HUTECH IT Got Talent. The project strengthened my ability to turn interconnected game-design rules into maintainable software systems.</p>
+        <a class="project-detail-link" href="placeholder.html?section=2&amp;project=empire-run&amp;subproject=1-1"><span>Read the technical deep dive</span><span aria-hidden="true">→</span></a>
+      </section>
+    </article>
+
+    <article class="technical-shell" data-project-page="empire-run-technical" hidden>
+      <header class="technical-hero">
+        <div class="technical-eyebrow"><span>1.1</span><span>Engineering case study</span></div>
+        <h1>Inside Empire Run</h1>
+        <p>How 208 C# scripts work together to run construction, population, production, regional economies and maritime logistics.</p>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/City-Builder-Final" target="_blank" rel="noopener noreferrer"><span>View source on GitHub</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="https://drive.google.com/file/d/1BNnYipMnY9GxhM5MgGlCyVoRbg-pia1A/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span>Download game v2.0</span><span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="unity-warning" aria-labelledby="unity-warning-title">
+          <div class="warning-mark" aria-hidden="true">!</div>
+          <div>
+            <h2 id="unity-warning-title">Unity compatibility notice</h2>
+            <p>This project was developed with Unity 6000.1.1f1. The editor version used for development caused project import and serialization problems; opening the project in another Unity version may damage or invalidate some files. Review the source on GitHub, or use the packaged v2.0 build to play the stable release.</p>
+          </div>
+        </aside>
+      </header>
+
+      <nav class="technical-toc" aria-label="On this page">
+        <a href="#tech-architecture"><span>01</span><span>Architecture</span></a>
+        <a href="#tech-buildings"><span>02</span><span>Building model</span></a>
+        <a href="#tech-simulation"><span>03</span><span>Simulation</span></a>
+        <a href="#tech-logistics"><span>04</span><span>Logistics</span></a>
+        <a href="#tech-persistence"><span>05</span><span>Persistence & online</span></a>
+        <a href="#tech-reflection"><span>06</span><span>Engineering reflection</span></a>
+      </nav>
+
+      <section class="technical-section" id="tech-architecture">
+        <div class="technical-heading">
+          <p class="section-label">01 — <span>Architecture</span></p>
+          <h2>A layered simulation built around reusable behaviours</h2>
+          <p>The codebase separates authored data, runtime building behaviour, global simulation services and presentation. A building starts as a data asset, becomes a placed runtime object, registers with the systems it depends on, and reports its state to UI and persistence.</p>
+        </div>
+
+        <div class="system-flow" aria-label="Architecture flow">
+          <article><span>01</span><h3>Player input</h3><p>Placement, rotation, move, upgrade and demolition.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02</span><h3>Runtime buildings</h3><p>Data definition + a specialized MonoBehaviour.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03</span><h3>Simulation services</h3><p>Roads, labor, storage, population, statistics and logistics.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>04</span><h3>Output</h3><p>UI feedback, save data, achievements and online results.</p></article>
+        </div>
+
+        <div class="technical-split">
+          <div>
+            <h3>Codebase map</h3>
+            <p>The project is organized by responsibility, with building behaviour receiving its own focused module.</p>
+          </div>
+          <pre class="code-tree" aria-label="Project folder tree"><code>Assets/Scripts/
+├── Building/Behavior/   <span>// runtime building logic</span>
+├── Data/                <span>// ScriptableObjects & save models</span>
+├── GameLogic/           <span>// placement, logistics, selection</span>
+├── Manager/             <span>// simulation-wide coordination</span>
+├── MovingObject/        <span>// boats & water routing</span>
+├── UI/                  <span>// panels, reports, login</span>
+└── World/               <span>// map loading & minimap</span></code></pre>
+        </div>
+
+        <div class="technical-stats" aria-label="Project scale">
+          <div><strong>208</strong><span>C# source files</span></div>
+          <div><strong>29,355</strong><span>lines of C#</span></div>
+          <div><strong>6</strong><span>production archetypes</span></div>
+          <div><strong>35</strong><span>economy categories</span></div>
+        </div>
+      </section>
+
+      <section class="technical-section" id="tech-buildings">
+        <div class="technical-heading">
+          <p class="section-label">02 — <span>Building model</span></p>
+          <h2>Data defines what a building is; behaviour defines what it does</h2>
+          <p>BuildingData stores footprint, rotation, placement surface, construction cost, upgrade path, maintenance, workforce, production and service values. This keeps balancing editable without rewriting the runtime logic.</p>
+        </div>
+
+        <div class="code-explainer">
+          <div class="code-copy">
+            <span class="code-file">Assets/Scripts/Data/BuildingData.cs</span>
+            <h3>One definition, many systems</h3>
+            <p>A single ScriptableObject becomes the contract used by placement, economy, UI, upgrade and building behaviour systems.</p>
+            <a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/Data/BuildingData.cs" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+          <pre><code><span class="code-keyword">[CreateAssetMenu]</span>
+public class BuildingData : ScriptableObject
+{
+    public Vector2Int size = new(1, 1);
+    public PlacementType Placement;
+    public List&lt;ResourceAmount&gt; buildingCost;
+    public BuildingData upgradeTarget;
+    public string behaviorClassName;
+
+    public int maintenanceFees;
+    public int requiredLaborAmount;
+    public float productionDuration;
+}</code></pre>
+        </div>
+
+        <div class="code-explainer code-explainer--reverse">
+          <pre><code>var behaviorType = GetBehaviorType(data);
+
+if (behaviorType != null &&
+    building.GetComponent(behaviorType) == null)
+{
+    building.AddComponent(behaviorType);
+}</code></pre>
+          <div class="code-copy">
+            <span class="code-file">Common/Helper/BuildingBehaviorHelper.cs</span>
+            <h3>Runtime behaviour composition</h3>
+            <p>The selected behaviour type is stored with the building data and attached only when the placed object does not already contain it. This lets construction stay generic while each building receives specialized logic.</p>
+            <a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/Common/Helper/BuildingBehaviorHelper.cs" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+        </div>
+
+        <div class="factory-table-wrap">
+          <h3>Six production archetypes</h3>
+          <div class="factory-table">
+            <article><b>Type 01</b><h4>Direct producer</h4><p>Produces one resource on a timed cycle.</p></article>
+            <article><b>Type 02</b><h4>Processor</h4><p>Consumes multiple inputs, supports a second collection attempt and queues output when storage is full.</p></article>
+            <article><b>Type 03</b><h4>Influence producer</h4><p>Calculates production from valid tiles in an influence area and can regenerate trees.</p></article>
+            <article><b>Type 04</b><h4>Crop farm</h4><p>Creates and manages farm plots linked to the parent building.</p></article>
+            <article><b>Type 05</b><h4>Livestock farm</h4><p>Uses dedicated livestock plots and shared farm infrastructure.</p></article>
+            <article><b>Type 06</b><h4>Resource extractor</h4><p>Requires the correct resource deposit beneath its footprint.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="technical-section" id="tech-simulation">
+        <div class="technical-heading">
+          <p class="section-label">03 — <span>Simulation</span></p>
+          <h2>A production cycle is constrained by the whole city</h2>
+          <p>Factories do not produce from a timer alone. They need a warehouse connection, the correct workforce ratio, available inputs and enough output capacity. The result is reported to global and regional statistics so the player can compare expected demand against actual supply.</p>
+        </div>
+
+        <div class="simulation-grid">
+          <article><span>01</span><h3>Connectivity</h3><p>Road events trigger factories and services to re-evaluate warehouse and main-house connections.</p></article>
+          <article><span>02</span><h3>Labor allocation</h3><p>Available Farmers, Workers and Engineers determine effective production speed.</p></article>
+          <article><span>03</span><h3>Storage pressure</h3><p>Input is consumed from a serving warehouse; output waits safely when delivery cannot complete.</p></article>
+          <article><span>04</span><h3>Economic reporting</h3><p>Expected and actual consumption/production are registered globally and per region.</p></article>
+        </div>
+
+        <div class="code-explainer">
+          <div class="code-copy">
+            <span class="code-file">Building/Behavior/TypeTwoFactory.cs</span>
+            <h3>Event-driven recalculation</h3>
+            <p>Factories subscribe only to the network changes that can invalidate their connection. When a road, main house or warehouse changes, the relationship is checked again instead of continuously scanning the entire map.</p>
+            <a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/Building/Behavior/TypeTwoFactory.cs" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+          <pre><code>private void OnEnable()
+{
+    RoadNetworkEvents.OnRoadChanged
+        += HandleNetworkChanged;
+    RoadNetworkEvents.OnMainHouseChanged
+        += HandleNetworkChanged_Delay;
+    RoadNetworkEvents.OnWarehouseChanged
+        += HandleNetworkChanged;
+}</code></pre>
+        </div>
+
+        <div class="decision-note">
+          <h3>Type 02 cycle safeguards</h3>
+          <ul>
+            <li>Collect inputs at the beginning, then retry halfway through the cycle when necessary.</li>
+            <li>Scale cycle duration by the currently allocated labor ratio.</li>
+            <li>Keep pending output and retry warehouse delivery once per second instead of discarding production.</li>
+            <li>Pause cleanly while preserving progress, connection state and statistics registration.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="technical-section" id="tech-logistics">
+        <div class="technical-heading">
+          <p class="section-label">04 — <span>Placement & logistics</span></p>
+          <h2>The same grid supports land, shoreline, resource deposits and water routes</h2>
+          <p>Placement validates occupied tiles against each building's surface rules, including mixed shoreline footprints. Players can rotate, move, upgrade and remove buildings, while farms and livestock buildings manage their own linked plots.</p>
+        </div>
+
+        <div class="placement-cards">
+          <article><b>Land</b><p>Standard footprints, collisions and construction costs.</p></article>
+          <article><b>Water</b><p>Harbors, dockyards and valid served-water tiles.</p></article>
+          <article><b>Shoreline</b><p>Per-rotation shore cells allow mixed land/water buildings.</p></article>
+          <article><b>Deposits</b><p>Extractors require the matching resource tile.</p></article>
+        </div>
+
+        <div class="code-explainer code-explainer--reverse">
+          <pre><code>if (WaterLineOfSight.IsStraightWaterClear(
+    waterTilemap, startWorld, targetWorld))
+{
+    return SimplePathPlanner.BuildPhasedPath(
+        startWorld, targetWorld);
+}
+
+return WaterGridPathfinder.FindPathOnWater(
+    waterTilemap, startCell, targetCell,
+    maxVisitedForAStar, out var cells);</code></pre>
+          <div class="code-copy">
+            <span class="code-file">MovingObject/Movement/SmartWaterRouter.cs</span>
+            <h3>Fast path first, A* when blocked</h3>
+            <p>Ships use a direct phased route when water line-of-sight is clear. If land blocks the path, the router falls back to grid-based A*, then converts the cells back into movement phases.</p>
+            <a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/MovingObject/Movement/SmartWaterRouter.cs" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+        </div>
+
+        <div class="logistics-pipeline">
+          <article><span>01</span><h3>Create link</h3><p>Choose origin and destination regions.</p></article>
+          <article><span>02</span><h3>Assign fleet</h3><p>Attach up to five boats to one route.</p></article>
+          <article><span>03</span><h3>Configure cargo</h3><p>Select up to five resource types and trip amounts.</p></article>
+          <article><span>04</span><h3>Run cycle</h3><p>Load, sail, unload and return continuously.</p></article>
+        </div>
+      </section>
+
+      <section class="technical-section" id="tech-persistence">
+        <div class="technical-heading">
+          <p class="section-label">05 — <span>Persistence & online</span></p>
+          <h2>The simulation can be reconstructed, not merely restarted</h2>
+          <p>JSON save models preserve placed buildings, rotations, regions, resources, population, production progress, transport links and achievement state. Loading rebuilds runtime objects and reconnects them to the managers that drive the simulation.</p>
+        </div>
+
+        <div class="persistence-grid">
+          <article><span class="system-tag">JSON</span><h3>Local game state</h3><p>Dedicated serializable models keep scene objects out of the save format and make reconstruction explicit.</p></article>
+          <article><span class="system-tag">REST</span><h3>Account services</h3><p>Login, account creation and cloud-facing requests connect a player identity to online features.</p></article>
+          <article><span class="system-tag">API</span><h3>Leaderboard</h3><p>Victory time can be submitted from the game and displayed on the companion website.</p></article>
+          <article><span class="system-tag">EVENT</span><h3>Achievements</h3><p>Gameplay milestones are registered across construction, population, production, wealth and logistics.</p></article>
+        </div>
+
+        <aside class="source-guide">
+          <div>
+            <p class="section-label">Recommended code-reading path</p>
+            <h3>Start with the building contract, then follow a production cycle</h3>
+          </div>
+          <ol>
+            <li><a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/Data/BuildingData.cs" target="_blank" rel="noopener noreferrer">BuildingData.cs <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/Common/Helper/BuildingBehaviorHelper.cs" target="_blank" rel="noopener noreferrer">BuildingBehaviorHelper.cs <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/Building/Behavior/TypeTwoFactory.cs" target="_blank" rel="noopener noreferrer">TypeTwoFactory.cs <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/GameLogic/LogisticManager.cs" target="_blank" rel="noopener noreferrer">LogisticManager.cs <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/City-Builder-Final/blob/main/Assets/Scripts/MovingObject/Movement/SmartWaterRouter.cs" target="_blank" rel="noopener noreferrer">SmartWaterRouter.cs <span>↗</span></a></li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="technical-section" id="tech-reflection">
+        <div class="technical-heading">
+          <p class="section-label">06 — <span>Engineering reflection</span></p>
+          <h2>What I would improve in the next iteration</h2>
+          <p>This prototype prioritised completing a broad, interconnected feature set. Reviewing the finished code reveals several clear opportunities to make a production version easier to test, extend and migrate.</p>
+        </div>
+        <div class="reflection-list">
+          <article><span>01</span><div><h3>Replace string-based behaviour lookup</h3><p>Move from assembly-qualified class names to a typed behaviour registry or factory, reducing reflection and migration risk.</p></div></article>
+          <article><span>02</span><div><h3>Reduce singleton coupling</h3><p>Introduce explicit service interfaces and dependency injection around storage, labor, statistics and progression.</p></div></article>
+          <article><span>03</span><div><h3>Extract pure simulation tests</h3><p>Move economy calculations into engine-independent classes and cover production, overflow and population edge cases with automated tests.</p></div></article>
+          <article><span>04</span><div><h3>Version the save schema</h3><p>Add explicit save versions and migration steps so balance or data-model changes remain backward compatible.</p></div></article>
+        </div>
+      </section>
+
+      <footer class="technical-footer">
+        <div>
+          <p class="section-label">Explore the project</p>
+          <h2>Read the implementation or play the packaged build</h2>
+          <p>The repository is best for reviewing architecture and code. Version 2.0 is the recommended way to experience the finished game without importing the Unity project.</p>
+        </div>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/City-Builder-Final" target="_blank" rel="noopener noreferrer"><span>View source on GitHub</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="https://drive.google.com/file/d/1BNnYipMnY9GxhM5MgGlCyVoRbg-pia1A/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span>Download game v2.0</span><span aria-hidden="true">↓</span></a>
+        </div>
+      </footer>
+
+      <aside class="unity-warning service-warning" aria-labelledby="service-warning-title">
+        <div class="warning-mark" aria-hidden="true">!</div>
+        <div>
+          <h2 id="service-warning-title">Companion website service notice</h2>
+          <p>Features that depend on the companion website, including save-game synchronization, leaderboards and other online services, are no longer available because the supporting website and backend are no longer maintained.</p>
+        </div>
+      </aside>
+    </article>
+
+    <article class="testing-shell" data-project-page="empire-run-testing" hidden>
+      <header class="testing-hero">
+        <div class="testing-eyebrow"><span>1.2</span><span>Testing case study</span></div>
+        <h1>Manual Testing & QA Retrospective</h1>
+        <p>How continuous hands-on testing shaped Empire Run—and how one workforce allocation defect led to a safer recomputation model.</p>
+        <aside class="testing-disclosure" aria-labelledby="testing-disclosure-title">
+          <span aria-hidden="true">i</span>
+          <div>
+            <h2 id="testing-disclosure-title">Documentation context</h2>
+            <p>Testing was embedded in solo development rather than performed as a separate QA phase. After implementing each feature, I tested it manually in Unity, investigated unexpected behaviour, fixed the implementation and repeated the test until it matched the intended design. No original test plan, test-case repository or bug-tracking records were retained; the scenarios on this page are reconstructed retrospectively from the final source code and observable game behaviour.</p>
+          </div>
+        </aside>
+      </header>
+
+      <nav class="testing-toc" aria-label="On this page">
+        <a href="#qa-workflow"><span>01</span><span>Actual workflow</span></a>
+        <a href="#qa-coverage"><span>02</span><span>Reconstructed coverage</span></a>
+        <a href="#qa-defect"><span>03</span><span>Defect case study</span></a>
+        <a href="#qa-scenarios"><span>04</span><span>Test scenarios</span></a>
+        <a href="#qa-evidence"><span>05</span><span>Remaining evidence</span></a>
+        <a href="#qa-reflection"><span>06</span><span>QA reflection</span></a>
+      </nav>
+
+      <section class="testing-section" id="qa-workflow">
+        <div class="testing-heading">
+          <p class="section-label">01 — <span>Actual workflow</span></p>
+          <h2>Test, correct and repeat before moving forward</h2>
+          <p>I learned Unity while building the project, so testing happened continuously at feature level. The goal was not only to make a method execute, but to observe the feature inside the connected simulation and keep iterating until its behaviour matched the game design.</p>
+        </div>
+
+        <div class="qa-flow" aria-label="Iterative testing workflow">
+          <article><span>01</span><h3>Implement</h3><p>Complete one focused behaviour or system change.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02</span><h3>Run in Unity</h3><p>Create the required game state manually.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03</span><h3>Observe & explore</h3><p>Compare actual behaviour with design intent and vary inputs.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>04</span><h3>Diagnose & fix</h3><p>Trace state changes, correct the implementation and run again.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>05</span><h3>Confirm</h3><p>Repeat the failing condition until the fix is stable.</p></article>
+        </div>
+
+        <div class="qa-method-grid">
+          <article><h3>Manual functional testing</h3><p>Verified that controls, rules and calculated results behaved according to the feature's intended purpose.</p></article>
+          <article><h3>Exploratory testing</h3><p>Changed resources, buildings and connections while observing side effects without relying on predefined scripts.</p></article>
+          <article><h3>Confirmation testing</h3><p>Reproduced the same condition after a code change to verify that the identified defect no longer occurred.</p></article>
+          <article><h3>Playtesting</h3><p>Evaluated whether information, production feedback and progression were understandable during normal play.</p></article>
+        </div>
+      </section>
+
+      <section class="testing-section" id="qa-coverage">
+        <div class="testing-heading">
+          <p class="section-label">02 — <span>Reconstructed coverage</span></p>
+          <h2>The final systems reveal the behaviours that required verification</h2>
+          <p>This matrix was reconstructed after development from the implemented rules. It is not presented as an original execution log; it documents the areas that were exercised while features were being built and the scenarios I would formalize today.</p>
+        </div>
+
+        <div class="coverage-table" role="table" aria-label="Reconstructed test coverage">
+          <div class="coverage-row coverage-head" role="row"><span role="columnheader">System</span><span role="columnheader">Testing focus</span><span role="columnheader">Key risk</span></div>
+          <div class="coverage-row" role="row"><strong role="cell">Construction</strong><span role="cell">Valid/invalid tiles, overlap, rotation, land, water, shoreline and deposits.</span><span role="cell">Invalid placement or incorrect cost deduction.</span></div>
+          <div class="coverage-row" role="row"><strong role="cell">Production</strong><span role="cell">Inputs, output, labor ratio, warehouse connection, full storage and pause/resume.</span><span role="cell">Lost resources or an incorrect production rate.</span></div>
+          <div class="coverage-row" role="row"><strong role="cell">Population</strong><span role="cell">Supplied needs, growth/decline, taxes and public-service coverage.</span><span role="cell">Population and available workforce becoming inconsistent.</span></div>
+          <div class="coverage-row" role="row"><strong role="cell">Logistics</strong><span role="cell">Route creation, blocked water paths, cargo quantities and harbor changes.</span><span role="cell">Ships becoming stuck or transferring the wrong resources.</span></div>
+          <div class="coverage-row" role="row"><strong role="cell">Save & load</strong><span role="cell">Buildings, rotations, resources, population, production and transport links.</span><span role="cell">Runtime state differing after reconstruction.</span></div>
+          <div class="coverage-row" role="row"><strong role="cell">Online flow</strong><span role="cell">Login, account data, victory submission and leaderboard display.</span><span role="cell">Incorrect account or completion data.</span></div>
+        </div>
+      </section>
+
+      <section class="testing-section defect-study" id="qa-defect">
+        <div class="testing-heading">
+          <p class="section-label">03 — <span>Defect case study</span></p>
+          <h2>Workforce disappeared when population changed</h2>
+          <p>LaborDistributorManager distributes Farmers, Workers and Engineers among factories inside each region. The first implementation incrementally added and subtracted labor. Manual testing exposed that this approach could no longer determine how much a factory should return or borrow when the population or factory list changed.</p>
+        </div>
+
+        <div class="defect-summary">
+          <article><span class="defect-state defect-state--bad">Observed</span><h3>Accounting drift</h3><ul><li>Labor could disappear or be duplicated after redistribution.</li><li>Factories retained allocations calculated from an outdated population.</li><li>Production efficiency no longer matched the workforce currently available.</li></ul></article>
+          <article><span class="defect-state">Root cause</span><h3>Incremental mutation without a reliable baseline</h3><p>Each update depended on the previous local add/subtract operations. Once several factories and population changes were involved, there was no single trustworthy value from which to calculate the next distribution.</p></article>
+          <article><span class="defect-state defect-state--good">Resolution</span><h3>Refund, recompute, then lend again</h3><p>The redesigned model stores the previous lend, restores it before calculation, derives a new regional utilization ratio, broadcasts that ratio to every factory in the bucket and records the replacement lend.</p></article>
+        </div>
+
+        <div class="allocation-model">
+          <div class="allocation-copy">
+            <p class="section-label">Recomputation model</p>
+            <h3>The previous allocation becomes part of the calculation—not hidden state</h3>
+            <ol>
+              <li><span>01</span><p>Group factories by region and labor type, then sum their required labor.</p></li>
+              <li><span>02</span><p>Recover the real available population by adding the previous lend back to the currently visible amount.</p></li>
+              <li><span>03</span><p>Calculate one utilization ratio: available labor divided by total demand, clamped from 0% to 100%.</p></li>
+              <li><span>04</span><p>Send the same ratio to every factory in that regional labor bucket.</p></li>
+              <li><span>05</span><p>Lend the newly required amount and record it for the next recomputation.</p></li>
+            </ol>
+          </div>
+          <pre class="qa-code"><code><span class="qa-code-comment">// LaborDistributorManager.cs</span>
+int availableNow =
+    RegionResourceManager.Instance
+        .GetAmount(regionID, resType);
+
+int prevLend = lastLendMap
+    .TryGetValue(laborType, out var prev)
+    ? prev : 0;
+
+int availableBeforeLend =
+    availableNow + prevLend;
+
+float ratio = totalReq == 0
+    ? 0f
+    : Mathf.Clamp01(
+        availableBeforeLend / (float)totalReq);
+
+foreach (var entry in factories)
+    entry.factory.OnLaborRatioUpdated(ratio);
+
+RegionResourceManager.Instance
+    .LendInRegion(regionID, resType, totalReq);
+
+lastLendMap[laborType] = totalReq;</code></pre>
+        </div>
+
+        <div class="lend-contract">
+          <pre class="qa-code"><code><span class="qa-code-comment">// RegionResourceManager.cs</span>
+int previousLend = lendDict.ContainsKey(type)
+    ? lendDict[type] : 0;
+
+res[type] += previousLend; <span class="qa-code-comment">// refund old lend</span>
+res[type] -= newLendAmount; <span class="qa-code-comment">// apply replacement</span>
+lendDict[type] = newLendAmount;</code></pre>
+          <div>
+            <p class="section-label">LendInRegion contract</p>
+            <h3>Replacement is safer than incremental correction</h3>
+            <p>LendInRegion does not try to calculate a difference from scattered factory state. It returns the complete previous lend and applies the complete new lend as one replacement operation, preserving workforce accounting across repeated changes.</p>
+          </div>
+        </div>
+
+        <aside class="allocation-example">
+          <span class="example-label">Worked example</span>
+          <div><strong>12</strong><span>available Workers</span></div>
+          <i aria-hidden="true">÷</i>
+          <div><strong>20</strong><span>total factory demand</span></div>
+          <i aria-hidden="true">=</i>
+          <div><strong>60%</strong><span>utilization for every factory</span></div>
+          <p>If the population later rises to 16, the old lend is restored first and the whole bucket is recalculated to 80%. If a factory is removed, demand is recalculated and the surplus returns to the regional pool.</p>
+        </aside>
+      </section>
+
+      <section class="testing-section" id="qa-scenarios">
+        <div class="testing-heading">
+          <p class="section-label">04 — <span>Reconstructed scenarios</span></p>
+          <h2>Tests I would formalize from the defect today</h2>
+          <p>These cases reconstruct the conditions needed to verify the corrected workforce model. They are derived from the final implementation and are not claimed as retained original test records.</p>
+        </div>
+
+        <div class="scenario-list">
+          <article><span class="scenario-id">LAB-01</span><div><h3>Labor below demand</h3><p><b>Condition:</b> <span>Two factories require 20 Workers; only 12 are available.</span></p><p><b>Expected:</b> <span>Both factories receive a 60% ratio and the regional total remains reconcilable.</span></p></div></article>
+          <article><span class="scenario-id">LAB-02</span><div><h3>Population increases</h3><p><b>Condition:</b> <span>Available Workers rise while the same factories remain registered.</span></p><p><b>Expected:</b> <span>The previous lend is refunded, ratio is recalculated immediately and output speed increases without duplicated labor.</span></p></div></article>
+          <article><span class="scenario-id">LAB-03</span><div><h3>Population decreases</h3><p><b>Condition:</b> <span>Available Workers fall below the amount used in the previous distribution.</span></p><p><b>Expected:</b> <span>All factories receive the new lower ratio; no workforce is lost during replacement.</span></p></div></article>
+          <article><span class="scenario-id">LAB-04</span><div><h3>Factory added or removed</h3><p><b>Condition:</b> <span>Demand changes while regional population stays constant.</span></p><p><b>Expected:</b> <span>Total demand and utilization are recomputed for every remaining factory.</span></p></div></article>
+          <article><span class="scenario-id">LAB-05</span><div><h3>Last factory unregistered</h3><p><b>Condition:</b> <span>The final factory in a region/labor bucket is removed.</span></p><p><b>Expected:</b> <span>Lend is reset to zero and the entire borrowed amount returns to the region.</span></p></div></article>
+          <article><span class="scenario-id">LAB-06</span><div><h3>Several changes in one frame</h3><p><b>Condition:</b> <span>Multiple population/resource notifications request the same recomputation.</span></p><p><b>Expected:</b> <span>The pending HashSet coalesces duplicates and processes the bucket once with the latest state.</span></p></div></article>
+        </div>
+      </section>
+
+      <section class="testing-section" id="qa-evidence">
+        <div class="testing-heading">
+          <p class="section-label">05 — <span>Remaining evidence</span></p>
+          <h2>Observable outputs from the systems that were tested</h2>
+          <p>Formal test artifacts were not retained, but the final interfaces still expose the state used during manual verification: expected versus actual supply, production efficiency, resident needs, completion state and submitted leaderboard results.</p>
+        </div>
+
+        <figure class="qa-evidence qa-evidence--wide">
+          <div class="qa-image"><img src="assets/projects/empire-run/regional-dashboard.png" alt="Expected and actual regional resource statistics"></div>
+          <figcaption><strong>Expected vs. actual statistics</strong><span>Used to observe whether simulated production and consumption matched the calculated plan for each region.</span></figcaption>
+        </figure>
+        <div class="qa-gallery qa-gallery--portrait">
+          <figure class="qa-evidence"><div class="qa-image"><img src="assets/projects/empire-run/production-cycle.png" alt="Fishing Harbor production and efficiency panel"></div><figcaption><strong>Production state</strong><span>Shows output mapping, cycle progress, maintenance cost and allocated workforce.</span></figcaption></figure>
+          <figure class="qa-evidence"><div class="qa-image"><img src="assets/projects/empire-run/residence-needs.png" alt="Farmer House needs and population panel"></div><figcaption><strong>Population response</strong><span>Shows supplied needs, occupancy percentage and the resulting tax income.</span></figcaption></figure>
+        </div>
+        <div class="qa-gallery">
+          <figure class="qa-evidence crop-right"><div class="qa-image"><img src="assets/projects/empire-run/victory.png" alt="Victory dialog with completion time"></div><figcaption><strong>Completion state</strong><span>Confirms the win condition, completion time and leaderboard submission flow.</span></figcaption></figure>
+          <figure class="qa-evidence browser-crop"><div class="qa-image"><img src="assets/projects/empire-run/leaderboard.png" alt="Empire Run web leaderboard"></div><figcaption><strong>Leaderboard result</strong><span>Confirms that a submitted run was persisted and displayed with player information.</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="testing-section" id="qa-reflection">
+        <div class="testing-heading">
+          <p class="section-label">06 — <span>QA reflection</span></p>
+          <h2>What this process taught me—and what I would change</h2>
+          <p>The iterative process helped me find state-management defects that were difficult to predict from code alone. It also showed the limitations of testing my own implementation without retained evidence or an independent reviewer.</p>
+        </div>
+        <div class="qa-reflection-grid">
+          <article><span>01</span><h3>Retain test artifacts</h3><p>Write acceptance criteria, test scenarios and execution results before closing a feature.</p></article>
+          <article><span>02</span><h3>Track the defect lifecycle</h3><p>Record reproduction steps, expected/actual results, severity, evidence, fix version and confirmation status.</p></article>
+          <article><span>03</span><h3>Create a regression checklist</h3><p>Re-run high-risk interactions between population, labor, storage, production and save/load for every build.</p></article>
+          <article><span>04</span><h3>Extract testable simulation logic</h3><p>Move workforce accounting into engine-independent classes and automate boundary and state-transition tests.</p></article>
+        </div>
+        <aside class="qa-closing">
+          <p>The strongest lesson was that dynamic systems should be recalculated from a reliable source of truth instead of corrected through accumulated local mutations. The same principle now guides how I design both software and test coverage.</p>
+        </aside>
+      </section>
+    </article>
+
+    <article class="project-shell shorturl-shell" data-project-page="shorturl" hidden>
+      <header class="project-hero shorturl-hero">
+        <div class="shorturl-eyebrow"><span>2.</span><span>Project overview</span></div>
+        <h1>ShortURL</h1>
+        <p class="project-deck">A compact AWS URL-shortening service that resolves links through a cache-aside path built with ECS Fargate, ElastiCache Valkey and RDS MySQL.</p>
+        <div class="shorturl-actions">
+          <a class="shorturl-action shorturl-action--primary" href="https://github.com/Leviethaidang/ShortURL" target="_blank" rel="noopener noreferrer"><span>View source code</span><span aria-hidden="true">↗</span></a>
+          <a class="shorturl-action" href="https://github.com/Leviethaidang/ShortURL/tree/main/infrastructure" target="_blank" rel="noopener noreferrer"><span>View CloudFormation</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="hero-shot shorturl-hero-shot">
+          <img src="assets/projects/shorturl/created-link.png" alt="ShortURL homepage interface running in the deployed AWS environment">
+          <figcaption><span>Live homepage interface of the deployed ShortURL application.</span></figcaption>
+        </figure>
+      </header>
+
+      <section class="project-intro" aria-labelledby="shorturl-overview-title">
+        <div>
+          <p class="section-label">Case study</p>
+          <h2 id="shorturl-overview-title">A small first AWS project with a complete delivery path</h2>
+          <p class="project-lead">ShortURL accepts an HTTP or HTTPS address, creates a cryptographically generated Base62 code, persists the mapping and returns a reusable short link. Opening that link follows a cache-first lookup path designed to reduce repeated database reads.</p>
+          <p>I implemented the Express application, MySQL repository, Valkey cache integration, Docker packaging, automated checks and a CloudFormation stack that recreates the AWS environment.</p>
+        </div>
+        <dl class="project-facts shorturl-facts">
+          <div><dt>Role</dt><dd>Solo Developer</dd></div>
+          <div><dt>Project type</dt><dd>AWS learning project</dd></div>
+          <div><dt>Core stack</dt><dd>Node.js · Express · MySQL · Valkey</dd></div>
+          <div><dt>Delivery</dt><dd>Docker · ECR · ECS Fargate · CloudFormation</dd></div>
+        </dl>
+      </section>
+
+      <section class="project-metrics shorturl-metrics" aria-label="ShortURL project scale">
+        <div><strong>7</strong><span>default Base62 characters</span></div>
+        <div><strong>1h</strong><span>default cache TTL</span></div>
+        <div><strong>2</strong><span>Availability Zones</span></div>
+        <div><strong>8</strong><span>automated Node test cases</span></div>
+      </section>
+
+      <section class="project-section" aria-labelledby="shorturl-flow-title">
+        <div class="section-heading">
+          <p class="section-label">01 — <span>Core request flows</span></p>
+          <h2 id="shorturl-flow-title">Creation writes once; redirects favor the fastest available source</h2>
+          <p>The service keeps link creation and link resolution deliberately small. MySQL remains the durable source of truth, while Valkey accelerates frequently requested codes and can fail without making stored links unavailable.</p>
+        </div>
+
+        <div class="shorturl-flow-columns">
+          <article>
+            <div class="shorturl-flow-head"><span>POST</span><code>/api/links</code></div>
+            <h3>Create a short link</h3>
+            <ol>
+              <li><span>01</span><p>Validate and normalize an HTTP or HTTPS URL up to 2,048 characters.</p></li>
+              <li><span>02</span><p>Generate a seven-character Base62 code with cryptographic random bytes and no modulo bias.</p></li>
+              <li><span>03</span><p>Insert the mapping into MySQL and retry on a rare duplicate-code collision.</p></li>
+              <li><span>04</span><p>Warm the cache, then return HTTP 201 with the short code, short URL and original URL.</p></li>
+            </ol>
+          </article>
+
+          <article>
+            <div class="shorturl-flow-head"><span>GET</span><code>/{code}</code></div>
+            <h3>Resolve and redirect</h3>
+            <ol>
+              <li><span>01</span><p>Reject malformed codes before touching cache or database.</p></li>
+              <li><span>02</span><p>Read Valkey using the namespaced key short-url:{code}.</p></li>
+              <li><span>03</span><p>On a miss or cache outage, query MySQL and repopulate the cache when found.</p></li>
+              <li><span>04</span><p>Return HTTP 302 to the original address, or redirect to the 404 page when no mapping exists.</p></li>
+            </ol>
+          </article>
+        </div>
+
+        <aside class="shorturl-resilience-note">
+          <span aria-hidden="true">↻</span>
+          <div><h3>Cache acceleration without cache dependency</h3><p>Cache read and write failures are logged and skipped. A cache outage therefore increases database traffic but does not invalidate links already stored in MySQL.</p></div>
+        </aside>
+      </section>
+
+      <section class="project-section" aria-labelledby="shorturl-cloud-title">
+        <div class="section-heading">
+          <p class="section-label">02 — <span>AWS architecture</span></p>
+          <h2 id="shorturl-cloud-title">One CloudFormation stack recreates the application environment</h2>
+          <p>The stack provisions a two-AZ VPC, public entry point, container workload and private data layer. Network rules allow each tier to communicate only with the next tier it needs.</p>
+        </div>
+
+        <div class="shorturl-architecture-grid">
+          <article><span>EDGE</span><h3>Application Load Balancer</h3><p>Accepts public HTTP traffic, runs /health checks and forwards only to the ECS target group.</p></article>
+          <article><span>COMPUTE</span><h3>ECS Fargate</h3><p>Runs one Dockerized Express service with configurable CPU, memory and desired count.</p></article>
+          <article><span>DATABASE</span><h3>RDS MySQL</h3><p>Stores URL mappings in private subnets with encrypted gp3 storage and no public access.</p></article>
+          <article><span>CACHE</span><h3>ElastiCache Valkey</h3><p>Provides encrypted in-transit and at-rest cache entries with a configurable TTL.</p></article>
+          <article><span>SECRETS</span><h3>AWS Secrets Manager</h3><p>Generates the database password and injects it into the ECS task without embedding it in the image.</p></article>
+          <article><span>OBSERVE</span><h3>CloudWatch Logs</h3><p>Collects container logs with a seven-day retention window and ECS Container Insights enabled.</p></article>
+        </div>
+
+        <aside class="shorturl-cost-choice">
+          <div>
+            <p class="section-label">Learning-project trade-off</p>
+            <h3>Lower demo cost without a NAT Gateway</h3>
+            <p>ECS tasks run in public subnets with public IP assignment so they can pull the ECR image without NAT. Their security group still accepts application traffic only from the ALB. RDS and Valkey remain private and accept connections only from ECS.</p>
+          </div>
+          <a href="https://github.com/Leviethaidang/ShortURL/blob/main/infrastructure/cloudformation.yml" target="_blank" rel="noopener noreferrer"><span>Open template</span><span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+
+      <section class="project-section" aria-labelledby="shorturl-demo-title">
+        <div class="section-heading">
+          <p class="section-label">03 — <span>Running demo</span></p>
+          <h2 id="shorturl-demo-title">The minimal interface demonstrates the complete round trip</h2>
+          <p>A user submits a long address, receives a generated link, copies it and can open it to exercise the same ALB → ECS → cache/database redirect path.</p>
+        </div>
+
+        <aside class="shorturl-domain-note">
+          <div class="shorturl-note-mark" aria-hidden="true">i</div>
+          <div><h3>Demo URL naming note</h3><p>These images only demonstrate that the AWS deployment was running. It used an AWS-generated CloudFront/ALB hostname without a custom Route 53 domain, so the public prefix can make the generated link longer than the original one. Route 53, ACM and a short custom domain would resolve this presentation limitation.</p></div>
+        </aside>
+
+        <div class="media-grid shorturl-demo-grid shorturl-demo-grid--single">
+          <figure class="project-shot shorturl-demo-shot">
+            <div class="image-viewport"><img src="assets/projects/shorturl/home.png" alt="ShortURL home page with a field for entering a long URL"></div>
+            <figcaption><strong>Create view</strong><span>The homepage exposes one focused input and submission action.</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="shorturl-quality-title">
+        <div class="section-heading">
+          <p class="section-label">04 — <span>Engineering guardrails</span></p>
+          <h2 id="shorturl-quality-title">Small scope, explicit failure handling</h2>
+          <p>The project keeps the feature set intentionally narrow while covering validation, collision handling, health reporting, secrets, graceful shutdown and repeatable deployment.</p>
+        </div>
+
+        <div class="shorturl-quality-grid">
+          <article><span>01</span><h3>Input boundaries</h3><p>Only HTTP and HTTPS URLs are accepted; request JSON is capped at 10 KB and redirect codes must match an alphanumeric pattern.</p></article>
+          <article><span>02</span><h3>Collision recovery</h3><p>A database primary key detects duplicate codes and creation retries up to five times before returning a controlled 503 error.</p></article>
+          <article><span>03</span><h3>Operational health</h3><p>The /health endpoint checks both MySQL and Valkey, while SIGTERM handling drains HTTP traffic and closes data connections.</p></article>
+          <article><span>04</span><h3>Automated checks</h3><p>Eight Node test cases cover URL validation, Base62 generation, the homepage, the 404 response and malformed-code redirects.</p></article>
+        </div>
+      </section>
+
+      <section class="project-outcome shorturl-outcome" aria-labelledby="shorturl-outcome-title">
+        <p class="section-label">05 — <span>Result</span></p>
+        <h2 id="shorturl-outcome-title">A focused introduction to containerized AWS delivery</h2>
+        <p>ShortURL gave me a complete first pass through application design, Docker packaging, managed data services, security groups, secrets, observability and Infrastructure as Code. The next production-facing step would be a short custom domain with HTTPS through Route 53 and ACM, followed by rate limiting and autoscaling.</p>
+        <a class="project-detail-link shorturl-repo-link" href="placeholder.html?section=2&amp;project=shorturl&amp;subproject=2-1"><span>Read the technical deep dive</span><span aria-hidden="true">→</span></a>
+      </section>
+    </article>
+
+    <article class="technical-shell shorturl-technical-shell" data-project-page="shorturl-technical" hidden>
+      <header class="technical-hero">
+        <div class="technical-eyebrow"><span>2.1</span><span>Engineering case study</span></div>
+        <h1>Inside ShortURL</h1>
+        <p>A technical walkthrough of code generation, cache-aside resolution, network boundaries and the infrastructure that carries one short link from request to redirect.</p>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/ShortURL" target="_blank" rel="noopener noreferrer"><span>View application source</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="https://github.com/Leviethaidang/ShortURL/blob/main/infrastructure/cloudformation.yml" target="_blank" rel="noopener noreferrer"><span>View CloudFormation</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="unity-warning shorturl-baseline-note" aria-labelledby="shorturl-baseline-title">
+          <div class="warning-mark" aria-hidden="true">◎</div>
+          <div>
+            <h2 id="shorturl-baseline-title">Implementation baseline</h2>
+            <p>The reviewed version runs one Node.js 22 / Express 5 service on ECS Fargate. MySQL is the durable source of truth, Valkey is an optional acceleration layer, and one CloudFormation template provisions the complete runtime environment. ECR image publication remains an explicit pre-deployment step.</p>
+          </div>
+        </aside>
+      </header>
+
+      <nav class="technical-toc" aria-label="ShortURL technical contents">
+        <a href="#shorturl-tech-architecture"><span>01</span><span>Request architecture</span></a>
+        <a href="#shorturl-tech-generation"><span>02</span><span>Code generation</span></a>
+        <a href="#shorturl-tech-cache"><span>03</span><span>Cache-aside resolution</span></a>
+        <a href="#shorturl-tech-security"><span>04</span><span>Data &amp; security</span></a>
+        <a href="#shorturl-tech-operations"><span>05</span><span>Runtime operations</span></a>
+        <a href="#shorturl-tech-iac"><span>06</span><span>Infrastructure as Code</span></a>
+        <a href="#shorturl-tech-reflection"><span>07</span><span>Engineering reflection</span></a>
+      </nav>
+
+      <section class="technical-section" id="shorturl-tech-architecture">
+        <div class="technical-heading">
+          <p class="section-label">01 — <span>Request architecture</span></p>
+          <h2>One public entry point, one stateless service and two private data paths</h2>
+          <p>The Application Load Balancer is the only public application endpoint. It forwards healthy requests to an Express container; the container then resolves data through Valkey or RDS without exposing either managed service to the internet.</p>
+        </div>
+
+        <div class="shorturl-path-strip" aria-label="ShortURL request path">
+          <article><span>01</span><h3>Client</h3><p>Submits a long URL or requests an existing short code.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02</span><h3>Application Load Balancer</h3><p>Accepts HTTP traffic and routes only to healthy ECS targets.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03</span><h3>ECS Fargate</h3><p>Validates input, coordinates persistence and returns 201 or 302 responses.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>04</span><h3>Valkey / MySQL</h3><p>Serves a cached mapping or falls back to the durable record.</p></article>
+        </div>
+
+        <figure class="shorturl-architecture-figure">
+          <div class="shorturl-architecture-viewport"><img src="assets/projects/shorturl/redirect-flow.png" alt="ShortURL cache-aside redirect diagram showing client, load balancer, ECS Fargate, ElastiCache Valkey and RDS MySQL"></div>
+          <figcaption><strong>Redirect flow — cache-aside pattern</strong><span>A cache hit returns the original URL immediately. A miss reads MySQL, populates Valkey for the next request and returns HTTP 302. If neither layer contains the code, the service redirects to its 404 page.</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="technical-section" id="shorturl-tech-generation">
+        <div class="technical-heading">
+          <p class="section-label">02 — <span>Short-code generation</span></p>
+          <h2>Base62 keeps the code URL-safe while cryptographic randomness avoids predictable sequences</h2>
+          <p>The generator draws bytes from Node’s crypto module and maps accepted values to digits, uppercase letters and lowercase letters. Values from 248 to 255 are discarded so all 62 characters have the same probability.</p>
+        </div>
+
+        <div class="technical-stats shorturl-generation-stats">
+          <div><strong>62</strong><span>URL-safe characters</span></div>
+          <div><strong>7</strong><span>default code length</span></div>
+          <div><strong>248</strong><span>uniform byte cutoff</span></div>
+          <div><strong>5×</strong><span>maximum collision retries</span></div>
+        </div>
+
+        <div class="code-explainer shorturl-code-card">
+          <div class="code-copy">
+            <span class="code-file">src/utils/generate-code.js</span>
+            <h3>Rejecting biased bytes</h3>
+            <p>Using byte modulo 62 directly would make several characters slightly more likely. Rejecting the incomplete range preserves a uniform distribution without introducing a third-party ID library.</p>
+            <a href="https://github.com/Leviethaidang/ShortURL/blob/main/src/utils/generate-code.js" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+          <pre><code><span class="code-keyword">while</span> (result.length &lt; length) {
+  const bytes = crypto.randomBytes(
+    length - result.length
+  );
+
+  <span class="code-keyword">for</span> (const byte of bytes) {
+    if (byte &gt;= 248) continue;
+    result += ALPHABET[byte % 62];
+    if (result.length === length) break;
+  }
+}</code></pre>
+        </div>
+
+        <aside class="decision-note shorturl-collision-note">
+          <h3>The database remains the collision authority</h3>
+          <p>The short code is the MySQL primary key. If an insert returns ER_DUP_ENTRY, the service generates a new value and retries. After five failed attempts it returns a controlled 503 instead of overwriting an existing mapping.</p>
+        </aside>
+      </section>
+
+      <section class="technical-section" id="shorturl-tech-cache">
+        <div class="technical-heading">
+          <p class="section-label">03 — <span>Cache-aside resolution</span></p>
+          <h2>Valkey improves the hot path but never becomes the source of truth</h2>
+          <p>Every redirect begins with the namespaced cache key short-url:{code}. The service queries MySQL only on a miss, then warms the cache with a configurable TTL. Cache connection errors are logged and treated as misses.</p>
+        </div>
+
+        <div class="shorturl-decision-grid">
+          <article><span>HIT</span><h3>Cache hit</h3><p>Return the stored URL and mark the response source as cache.</p></article>
+          <article><span>MISS</span><h3>Cache miss</h3><p>Read MySQL, cache the record for the next request and redirect.</p></article>
+          <article><span>DEGRADED</span><h3>Valkey unavailable</h3><p>Skip the failed cache operation and continue through MySQL.</p></article>
+          <article><span>404</span><h3>Code not found</h3><p>Redirect to /404 when the durable store has no matching record.</p></article>
+        </div>
+
+        <div class="code-explainer code-explainer--reverse shorturl-code-card">
+          <pre><code>const cachedUrl = await cache.get(shortCode);
+if (cachedUrl) {
+  return { originalUrl: cachedUrl,
+           source: 'cache' };
+}
+
+const link = await repository.findByCode(shortCode);
+if (!link) return null;
+
+await cache.set(shortCode, link.originalUrl);
+return { originalUrl: link.originalUrl,
+         source: 'database' };</code></pre>
+          <div class="code-copy">
+            <span class="code-file">src/services/link-service.js</span>
+            <h3>Fallback is encoded in the service boundary</h3>
+            <p>Controllers do not need to know whether a result came from cache or database. The service returns one resolved object and the controller exposes the source only as a diagnostic response header.</p>
+            <a href="https://github.com/Leviethaidang/ShortURL/blob/main/src/services/link-service.js" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="technical-section" id="shorturl-tech-security">
+        <div class="technical-heading">
+          <p class="section-label">04 — <span>Data &amp; security boundaries</span></p>
+          <h2>Security groups express the permitted path between tiers</h2>
+          <p>The stack separates public ingress, application compute and managed data. Security-group references are used instead of broad source CIDRs for service-to-service traffic.</p>
+        </div>
+
+        <div class="placement-cards shorturl-security-grid">
+          <article><b>ALB · :80</b><p>Internet-facing in two public subnets; the ingress CIDR is configurable.</p></article>
+          <article><b>ECS · :3000</b><p>Accepts application traffic only from the ALB security group.</p></article>
+          <article><b>RDS · :3306</b><p>Private, storage-encrypted and reachable only from the ECS security group.</p></article>
+          <article><b>Valkey · :6379</b><p>Private with encryption in transit and at rest; reachable only from ECS.</p></article>
+        </div>
+
+        <div class="technical-split shorturl-secret-split">
+          <div>
+            <p class="section-label">Credential delivery</p>
+            <h3>The password never enters the image</h3>
+            <p>Secrets Manager generates a 32-character database password. The ECS execution role can read only that secret, and the task definition injects its password field into DB_PASSWORD at runtime.</p>
+          </div>
+          <pre class="code-tree"><code>DatabaseSecret
+└── generated { username, password }
+
+EcsTaskExecutionRole
+└── secretsmanager:GetSecretValue
+    └── DatabaseSecret only
+
+TaskDefinition
+└── DB_PASSWORD ← secret:password</code></pre>
+        </div>
+      </section>
+
+      <section class="technical-section" id="shorturl-tech-operations">
+        <div class="technical-heading">
+          <p class="section-label">05 — <span>Runtime operations</span></p>
+          <h2>Health reporting preserves redirect availability when only the cache is down</h2>
+          <p>The /health endpoint checks MySQL and Valkey separately. Database failure makes the target unavailable, while cache failure reports a degraded but HTTP-200 state so the load balancer can continue sending traffic to a service that can still resolve links.</p>
+        </div>
+
+        <div class="shorturl-health-grid">
+          <article class="is-ok"><span>200</span><h3>OK</h3><p>MySQL up, Valkey up — full data path available.</p></article>
+          <article class="is-degraded"><span>200</span><h3>DEGRADED</h3><p>MySQL up, Valkey down — redirects continue through the database.</p></article>
+          <article class="is-down"><span>503</span><h3>UNAVAILABLE</h3><p>MySQL down — durable reads and writes cannot be guaranteed.</p></article>
+        </div>
+
+        <aside class="decision-note shorturl-runtime-note">
+          <h3>Graceful container shutdown</h3>
+          <p>SIGTERM closes the HTTP server first, then ends the MySQL pool and Valkey client with Promise.allSettled. A ten-second fail-safe prevents the task from hanging during replacement. CloudWatch retains application logs for seven days and ECS Container Insights is enabled.</p>
+        </aside>
+      </section>
+
+      <section class="technical-section" id="shorturl-tech-iac">
+        <div class="technical-heading">
+          <p class="section-label">06 — <span>Infrastructure as Code</span></p>
+          <h2>Application delivery is split into an image artifact and one repeatable runtime stack</h2>
+          <p>A PowerShell helper builds a Linux AMD64 image, creates the ECR repository when necessary and pushes the selected tag. CloudFormation then consumes the selected image URI and provisions networking, compute, data, secrets, logging and outputs.</p>
+        </div>
+
+        <div class="system-flow shorturl-delivery-flow" aria-label="ShortURL deployment flow">
+          <article><span>01</span><h3>Build</h3><p>Create the two-stage Node 22 Alpine image and run as a non-root user.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02</span><h3>Publish</h3><p>Push the selected Linux AMD64 image tag to ECR with scan-on-push enabled.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03</span><h3>Deploy</h3><p>Pass the image URI into the CloudFormation stack and create or update resources.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>04</span><h3>Handoff</h3><p>Read the ALB application URL and service endpoints from stack outputs.</p></article>
+        </div>
+
+        <div class="factory-table-wrap">
+          <h3>What the stack owns</h3>
+          <div class="factory-table shorturl-stack-grid">
+            <article><b>NETWORK</b><h4>VPC · 4 subnets · IGW</h4><p>Two public and two private subnets across the first two Availability Zones, route tables and four security groups.</p></article>
+            <article><b>COMPUTE</b><h4>ALB · ECS Fargate</h4><p>Cluster, task roles, task definition, service, listener, target group and health checks.</p></article>
+            <article><b>DATA</b><h4>RDS · Valkey</h4><p>Encrypted MySQL storage, one encrypted cache node, subnet groups and generated credentials.</p></article>
+            <article><b>OPERATIONS</b><h4>CloudWatch · Outputs</h4><p>Seven-day logs, Container Insights and the URLs and endpoints needed after deployment.</p></article>
+          </div>
+        </div>
+
+        <aside class="source-guide shorturl-source-guide">
+          <div>
+            <p class="section-label">Artifact boundary</p>
+            <h3>ECR is prepared before the stack</h3>
+            <p>CloudFormation deliberately receives ContainerImage as a parameter; it does not build application code or create the ECR repository. This keeps infrastructure deployment separate from artifact publication and makes that prerequisite explicit.</p>
+          </div>
+          <ol>
+            <li><a href="https://github.com/Leviethaidang/ShortURL/blob/main/scripts/push-to-ecr.ps1" target="_blank" rel="noopener noreferrer">push-to-ecr.ps1 <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/ShortURL/blob/main/scripts/deploy-cloudformation.ps1" target="_blank" rel="noopener noreferrer">deploy-cloudformation.ps1 <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/ShortURL/blob/main/infrastructure/cloudformation.yml" target="_blank" rel="noopener noreferrer">cloudformation.yml <span>↗</span></a></li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="technical-section" id="shorturl-tech-reflection">
+        <div class="technical-heading">
+          <p class="section-label">07 — <span>Engineering reflection</span></p>
+          <h2>The design is intentionally small; its boundaries make the next improvements clear</h2>
+          <p>ShortURL was my first AWS project, so the implementation prioritizes an understandable end-to-end path over production scale. The current code demonstrates clean fallbacks and reproducible infrastructure while documenting the cost and availability compromises made for a temporary demo.</p>
+        </div>
+
+        <div class="reflection-list">
+          <article><span>01</span><div><h3>What is already strong</h3><p>Stateless application logic, prepared SQL statements, cryptographic code generation, graceful cache failure, scoped network access and runtime secret injection.</p></div></article>
+          <article><span>02</span><div><h3>Demo-cost decisions</h3><p>No NAT Gateway, one RDS instance, one Valkey node, no backups and delete-on-stack-removal policies reduce temporary cost but also reduce resilience.</p></div></article>
+          <article><span>03</span><div><h3>Public-edge gap</h3><p>The stack currently exposes HTTP through an AWS-generated ALB hostname. Route 53, ACM and HTTPS would turn the generated path into a genuinely short, trusted public link.</p></div></article>
+          <article><span>04</span><div><h3>Production evolution</h3><p>Add rate limiting and abuse protection, ECS autoscaling, Multi-AZ data services, backups, alarms, private image access through NAT or VPC endpoints and deployment automation.</p></div></article>
+        </div>
+      </section>
+
+      <footer class="technical-footer shorturl-technical-footer">
+        <div>
+          <p class="section-label">Source-backed case study</p>
+          <h2>Every decision on this page maps to application code or CloudFormation</h2>
+          <p>Review the repository for the complete implementation, or return to the overview for the concise project story and running-demo images.</p>
+        </div>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/ShortURL" target="_blank" rel="noopener noreferrer"><span>View application source</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="placeholder.html?section=2&amp;project=shorturl"><span>Back to project overview</span><span aria-hidden="true">←</span></a>
+        </div>
+      </footer>
+    </article>
+
+    <article class="technical-shell shorturl-testing-shell" data-project-page="shorturl-testing" hidden>
+      <header class="technical-hero shorturl-testing-hero">
+        <div class="technical-eyebrow"><span>2.2</span><span>QA case study</span></div>
+        <h1>Testing ShortURL on AWS</h1>
+        <p>A Postman-based functional test pass covering service health, link creation, redirect behavior, cache/database routing and validation failures against the deployed ECS environment.</p>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/ShortURL/blob/main/docs/manual-test-cases.md" target="_blank" rel="noopener noreferrer"><span>View documented test cases</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="https://github.com/Leviethaidang/ShortURL" target="_blank" rel="noopener noreferrer"><span>View application source</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="unity-warning shorturl-test-note" aria-labelledby="shorturl-test-note-title">
+          <div class="warning-mark" aria-hidden="true">✓</div>
+          <div>
+            <h2 id="shorturl-test-note-title">Execution context</h2>
+            <p>Requests were executed manually in Postman against the public AWS Application Load Balancer. Redirect following was disabled when the status and Location header needed direct verification. The evidence set was captured from one deployed environment on 01 September 2026.</p>
+          </div>
+        </aside>
+      </header>
+
+      <section class="technical-stats shorturl-test-stats" aria-label="ShortURL test summary">
+        <div><strong>10</strong><span>documented test cases</span></div>
+        <div><strong>11</strong><span>observed executions</span></div>
+        <div><strong>5</strong><span>distinct HTTP status codes</span></div>
+        <div><strong>2</strong><span>redirect data sources verified</span></div>
+      </section>
+
+      <nav class="technical-toc" aria-label="ShortURL testing contents">
+        <a href="#shorturl-test-strategy"><span>01</span><span>Test strategy</span></a>
+        <a href="#shorturl-test-matrix"><span>02</span><span>Coverage matrix</span></a>
+        <a href="#shorturl-test-cache"><span>03</span><span>Stateful redirect test</span></a>
+        <a href="#shorturl-test-assertions"><span>04</span><span>Postman assertions</span></a>
+        <a href="#shorturl-test-evidence"><span>05</span><span>Execution evidence</span></a>
+        <a href="#shorturl-test-reflection"><span>06</span><span>Findings &amp; next steps</span></a>
+      </nav>
+
+      <section class="technical-section" id="shorturl-test-strategy">
+        <div class="technical-heading">
+          <p class="section-label">01 — <span>Test strategy</span></p>
+          <h2>Verify the public contract first, then exercise the internal cache-aside branches</h2>
+          <p>The test pass begins with availability checks, validates the primary create-and-redirect journey, then challenges input boundaries and not-found behavior. Response status, body, content type and headers are compared with the expected API contract.</p>
+        </div>
+
+        <div class="shorturl-test-scope">
+          <article><span>SMOKE</span><h3>Availability</h3><p>Health dependencies and the HTML entry page must be reachable before functional testing continues.</p></article>
+          <article><span>POSITIVE</span><h3>Core workflow</h3><p>Create a Base62 code, retain it as test data and resolve it back to the exact original URL.</p></article>
+          <article><span>NEGATIVE</span><h3>Input validation</h3><p>Missing, malformed and unsupported URLs must fail predictably with HTTP 400 and a useful message.</p></article>
+          <article><span>ROUTING</span><h3>Fallback paths</h3><p>Unknown and invalid codes must lead to /404, while valid codes must identify cache or database as their source.</p></article>
+        </div>
+
+        <div class="technical-split shorturl-environment-split">
+          <div>
+            <p class="section-label">Postman environment</p>
+            <h3>Four variables keep dependent requests repeatable</h3>
+            <p>The public hostname and original URL are configured once. TC-03 saves the generated code and short URL so TC-04 can reuse the exact record without manual copying.</p>
+          </div>
+          <dl class="shorturl-variable-list">
+            <div><dt>base_url</dt><dd>AWS ALB application URL</dd></div>
+            <div><dt>original_url</dt><dd>target used for creation and redirect checks</dd></div>
+            <div><dt>short_code</dt><dd>seven-character value saved from TC-03</dd></div>
+            <div><dt>short_url</dt><dd>complete generated URL saved from TC-03</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="technical-section" id="shorturl-test-matrix">
+        <div class="technical-heading">
+          <p class="section-label">02 — <span>Coverage matrix</span></p>
+          <h2>Ten cases cover the public routes and their most important boundaries</h2>
+          <p>Each case has a single observable purpose. TC-04 is executed twice to prove both cache-aside branches, producing eleven captured executions across the ten documented cases.</p>
+        </div>
+
+        <div class="shorturl-test-table-wrap">
+          <table class="shorturl-test-table">
+            <thead><tr><th>ID</th><th>Request</th><th>Purpose</th><th>Expected</th><th>Observed</th></tr></thead>
+            <tbody>
+              <tr><td>TC-01</td><td><code>GET /health</code></td><td>Dependency health</td><td><code>200 · ok</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-02</td><td><code>GET /</code></td><td>Home page availability</td><td><code>200 · HTML</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-03</td><td><code>POST /api/links</code></td><td>Create short URL</td><td><code>201 · Base62[7]</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-04 A/B</td><td><code>GET /{code}</code></td><td>Database and cache redirect paths</td><td><code>302 · Location · Source</code></td><td><span class="test-pass">PASS ×2</span></td></tr>
+              <tr><td>TC-05</td><td><code>POST {}</code></td><td>Missing URL</td><td><code>400</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-06</td><td><code>POST malformed</code></td><td>Malformed URL</td><td><code>400</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-07</td><td><code>POST javascript:</code></td><td>Unsupported protocol</td><td><code>400</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-08</td><td><code>GET /NOTFOUND123</code></td><td>Unknown valid-format code</td><td><code>302 → /404</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-09</td><td><code>GET /404</code></td><td>Not-found page status</td><td><code>404 · HTML</code></td><td><span class="test-pass">PASS</span></td></tr>
+              <tr><td>TC-10</td><td><code>GET /invalid-code!</code></td><td>Invalid code format</td><td><code>302 → /404</code></td><td><span class="test-pass">PASS</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="technical-section" id="shorturl-test-cache">
+        <div class="technical-heading">
+          <p class="section-label">03 — <span>Stateful redirect test</span></p>
+          <h2>The response header proves which data source resolved the same short code</h2>
+          <p>Both requests used code 0X41HxN, returned HTTP 302 and pointed to the same YouTube URL. When the cache entry was absent the service reported database; the subsequent cached execution reported cache.</p>
+        </div>
+
+        <div class="shorturl-source-comparison">
+          <article class="source-result source-result--database">
+            <div class="source-result-head"><span>DATABASE</span><strong>161 ms</strong></div>
+            <div class="source-bar"><i style="width:100%"></i></div>
+            <dl><div><dt>HTTP</dt><dd>302 Found</dd></div><div><dt>Header</dt><dd>X-Short-Url-Source: database</dd></div><div><dt>Location</dt><dd>Matched the original URL</dd></div></dl>
+            <a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc04-database.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc04-database.png" alt="Postman response headers showing X-Short-Url-Source database and 161 milliseconds"></a>
+          </article>
+          <article class="source-result source-result--cache">
+            <div class="source-result-head"><span>CACHE</span><strong>60 ms</strong></div>
+            <div class="source-bar"><i style="width:37.3%"></i></div>
+            <dl><div><dt>HTTP</dt><dd>302 Found</dd></div><div><dt>Header</dt><dd>X-Short-Url-Source: cache</dd></div><div><dt>Location</dt><dd>Matched the original URL</dd></div></dl>
+            <a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc04-cache.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc04-cache.png" alt="Postman response headers showing X-Short-Url-Source cache and 60 milliseconds"></a>
+          </article>
+        </div>
+
+        <aside class="shorturl-timing-note">
+          <strong>−101 ms</strong>
+          <div><h3>Observed difference in this execution</h3><p>The cache response was approximately 63% lower in this single pair of observations. This includes Postman, network and ALB overhead and is functional evidence of branch behavior, not a repeatable performance benchmark.</p></div>
+        </aside>
+      </section>
+
+      <section class="technical-section" id="shorturl-test-assertions">
+        <div class="technical-heading">
+          <p class="section-label">04 — <span>Postman assertions</span></p>
+          <h2>Manual execution is reinforced with reusable response checks</h2>
+          <p>The TC-03 script checks the response contract and stores generated values for dependent requests. TC-04 then validates status, Location and the diagnostic source header instead of relying only on the visible response body.</p>
+        </div>
+
+        <div class="code-explainer shorturl-postman-code">
+          <div class="code-copy">
+            <span class="code-file">Postman · TC-03 Tests</span>
+            <h3>Assert and chain the successful creation response</h3>
+            <p>Regex verifies the seven-character Base62 contract. Environment variables remove manual transcription and ensure the redirect case uses the exact code returned by the API.</p>
+          </div>
+          <pre><code>pm.test("Status is 201", () =&gt;
+  pm.response.to.have.status(201));
+
+const data = pm.response.json();
+pm.expect(data.shortCode)
+  .to.match(/^[0-9A-Za-z]{7}$/);
+pm.expect(data.shortUrl)
+  .to.eql(`${pm.environment.get("base_url")}/${data.shortCode}`);
+pm.expect(data.originalUrl)
+  .to.eql(pm.environment.get("original_url"));
+
+pm.environment.set("short_code", data.shortCode);
+pm.environment.set("short_url", data.shortUrl);</code></pre>
+        </div>
+
+        <div class="shorturl-assertion-list">
+          <article><span>STATUS</span><p>Compare the exact success, redirect, validation and not-found status code.</p></article>
+          <article><span>BODY</span><p>Check JSON fields, validation error messages and expected HTML markers.</p></article>
+          <article><span>HEADER</span><p>Verify Location and X-Short-Url-Source with redirect following disabled.</p></article>
+          <article><span>STATE</span><p>Persist generated values so dependent cases use the same server-side record.</p></article>
+        </div>
+      </section>
+
+      <section class="technical-section" id="shorturl-test-evidence">
+        <div class="technical-heading">
+          <p class="section-label">05 — <span>Execution evidence</span></p>
+          <h2>Each test result is backed by evidence from the deployed AWS environment</h2>
+          <p>Each screenshot preserves the method, route, observed status and relevant response. Select any image to inspect it at its original resolution.</p>
+        </div>
+
+        <div class="shorturl-evidence-grid">
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc01-health.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc01-health.png" alt="TC-01 Postman health response showing database and cache up"></a><figcaption><strong>TC-01 · 200 OK</strong><span>Health reports both dependencies as up.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc02-home.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc02-home.png" alt="TC-02 Postman home page HTML response"></a><figcaption><strong>TC-02 · 200 OK</strong><span>The public entry page returns HTML.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc03-create.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc03-create.png" alt="TC-03 Postman response creating short code 0X41HxN"></a><figcaption><strong>TC-03 · 201 Created</strong><span>The API returns a seven-character code and matching URLs.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc05-missing.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc05-missing.png" alt="TC-05 missing URL response with HTTP 400"></a><figcaption><strong>TC-05 · 400 Bad Request</strong><span>An empty JSON object returns the required-field message.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc06-malformed.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc06-malformed.png" alt="TC-06 malformed URL response with HTTP 400"></a><figcaption><strong>TC-06 · 400 Bad Request</strong><span>A malformed address is rejected before persistence.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc07-protocol.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc07-protocol.png" alt="TC-07 unsupported JavaScript protocol response with HTTP 400"></a><figcaption><strong>TC-07 · 400 Bad Request</strong><span>The javascript protocol is rejected.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc08-unknown.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc08-unknown.png" alt="TC-08 response headers showing an unknown code redirects to slash 404"></a><figcaption><strong>TC-08 · 302 Found</strong><span>An unknown Base62-format code sets Location to /404.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc09-not-found.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc09-not-found.png" alt="TC-09 not-found HTML page with HTTP 404"></a><figcaption><strong>TC-09 · 404 Not Found</strong><span>The destination page preserves the correct HTTP status.</span></figcaption></figure>
+          <figure><a class="shorturl-evidence-link" href="assets/projects/shorturl/testing/tc10-format.png" target="_blank"><img loading="lazy" src="assets/projects/shorturl/testing/tc10-format.png" alt="TC-10 invalid short-code format redirecting to slash 404"></a><figcaption><strong>TC-10 · 302 Found</strong><span>Non-Base62 characters are routed to /404.</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="technical-section" id="shorturl-test-reflection">
+        <div class="technical-heading">
+          <p class="section-label">06 — <span>Findings &amp; next steps</span></p>
+          <h2>The functional contract passed; broader quality risks remain explicit</h2>
+          <p>All ten documented cases matched their expected outcomes in the captured AWS run. The strongest evidence is the source header, which confirms that both database fallback and cache-hit behavior were exercised rather than inferred from timing alone.</p>
+        </div>
+
+        <div class="reflection-list shorturl-test-reflection-list">
+          <article><span>01</span><div><h3>Verified in this pass</h3><p>Availability, successful creation, Base62 shape, exact redirect target, source selection, validation messages and not-found routing.</p></div></article>
+          <article><span>02</span><div><h3>Evidence limitation</h3><p>Screenshots represent one environment and one execution per observation. Response times should not be generalized without repeated measurements and percentile reporting.</p></div></article>
+          <article><span>03</span><div><h3>Not covered yet</h3><p>Concurrency, load, rate limiting, dependency fault injection, cache expiry, oversized payloads, security abuse cases and cross-browser interface behavior.</p></div></article>
+          <article><span>04</span><div><h3>Automation path</h3><p>Export the Postman collection, run it with Newman in CI, add data-driven boundary cases and collect repeated cache/database latency samples with p50 and p95.</p></div></article>
+        </div>
+      </section>
+
+      <footer class="technical-footer shorturl-testing-footer">
+        <div>
+          <p class="section-label">QA outcome</p>
+          <h2>A traceable manual test pass with source-level branch evidence</h2>
+          <p>The page links expected behavior, observed results and screenshots while keeping single-run timing claims appropriately bounded.</p>
+        </div>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/ShortURL/blob/main/docs/manual-test-cases.md" target="_blank" rel="noopener noreferrer"><span>View documented test cases</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="placeholder.html?section=2&amp;project=shorturl&amp;subproject=2-1"><span>Back to technical deep dive</span><span aria-hidden="true">←</span></a>
+        </div>
+      </footer>
+    </article>
+
+    <article class="project-shell hashop-shell" data-project-page="hashop" hidden>
+      <header class="project-hero">
+        <div class="hashop-eyebrow"><span>3.</span><span>Project overview</span></div>
+        <h1>HaShop</h1>
+        <p class="project-deck">A cloud-native e-commerce platform that separates customer, catalog, inventory and order workflows into independently deployed services on AWS.</p>
+        <figure class="hero-shot hashop-hero-shot">
+          <img src="assets/projects/hashop/product-catalog.png" alt="HaShop product catalog with category, price and availability filters">
+          <figcaption><span>Product discovery with category, price and stock filters served through the CloudFront frontend.</span></figcaption>
+        </figure>
+      </header>
+
+      <section class="project-intro" aria-labelledby="hashop-overview-title">
+        <div>
+          <p class="section-label">Case study</p>
+          <h2 id="hashop-overview-title">An end-to-end storefront built around service boundaries</h2>
+          <p class="project-lead">HaShop is a personal e-commerce project for browsing clothing, managing variants and stock, placing orders and receiving lifecycle emails. I built the frontend, seven backend domains and the AWS infrastructure needed to deploy the system as containerized microservices.</p>
+          <p>The final environment uses CloudFront and WAF at the edge, path-based routing through an Application Load Balancer, private ECS Fargate workloads, Cognito authentication and event-driven workers backed by SNS and SQS.</p>
+        </div>
+        <dl class="project-facts">
+          <div><dt>Role</dt><dd>Solo Full-stack &amp; Cloud Developer</dd></div>
+          <div><dt>Project type</dt><dd>E-commerce microservices platform</dd></div>
+          <div><dt>Scope</dt><dd>Frontend + APIs + workers + AWS infrastructure</dd></div>
+          <div><dt>Validation</dt><dd>Local, single-EC2 and ECS environments</dd></div>
+        </dl>
+      </section>
+
+      <section class="project-metrics" aria-label="HaShop project scale">
+        <div><strong>7</strong><span>business-domain services</span></div>
+        <div><strong>9</strong><span>ECS Fargate services</span></div>
+        <div><strong>6</strong><span>domain database schemas</span></div>
+        <div><strong>4</strong><span>ordered CloudFormation stacks</span></div>
+      </section>
+
+      <section class="project-section" aria-labelledby="hashop-shopping-title">
+        <div class="section-heading">
+          <p class="section-label">01 — <span>Customer journey</span></p>
+          <h2 id="hashop-shopping-title">From product discovery to a validated checkout</h2>
+          <p>Customers can inspect size and color variants, see available inventory, add items to a persistent cart and submit either cart-based or buy-now orders using COD or simulated MOMO/BANK payment methods.</p>
+        </div>
+        <div class="media-grid">
+          <figure class="project-shot hashop-ui-shot">
+            <div class="image-viewport"><img src="assets/projects/hashop/product-detail.png" alt="HaShop product detail with size, color and quantity selectors"></div>
+            <figcaption><strong>Variant-aware catalog</strong><span>Product details combine imagery, pricing, size, color and live available quantity.</span></figcaption>
+          </figure>
+          <figure class="project-shot hashop-ui-shot">
+            <div class="image-viewport"><img src="assets/projects/hashop/cart.png" alt="HaShop shopping cart with quantity controls and order summary"></div>
+            <figcaption><strong>Inventory-checked cart</strong><span>Cart actions revalidate product variants and stock before the order reaches checkout.</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="hashop-admin-title">
+        <div class="section-heading">
+          <p class="section-label">02 — <span>Admin operations</span></p>
+          <h2 id="hashop-admin-title">Catalog and inventory are managed as one workflow</h2>
+          <p>Admin-only interfaces support user, category, product and order management. Product creation uploads images through S3 pre-signed URLs and synchronizes every size/color variant with Inventory Service.</p>
+        </div>
+        <div class="media-grid hashop-admin-grid">
+          <figure class="project-shot">
+            <div class="image-viewport"><img src="assets/projects/hashop/admin-create-product.png" alt="HaShop admin form for creating a product"></div>
+            <figcaption><strong>Product definition</strong><span>Admins manage product information, category, price and image assets.</span></figcaption>
+          </figure>
+          <figure class="project-shot">
+            <div class="image-viewport"><img src="assets/projects/hashop/admin-variants.png" alt="HaShop admin form for product images, variants and stock"></div>
+            <figcaption><strong>Variants &amp; opening stock</strong><span>Each size/color combination is created with its own inventory quantity.</span></figcaption>
+          </figure>
+        </div>
+        <figure class="project-shot project-shot--wide hashop-product-table">
+          <div class="image-viewport"><img src="assets/projects/hashop/admin-products.png" alt="HaShop admin product list with on-hand and reserved inventory"></div>
+          <figcaption><strong>Operational inventory view</strong><span>The administration table exposes on-hand and reserved stock alongside product maintenance actions.</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="project-section" aria-labelledby="hashop-cloud-title">
+        <div class="section-heading">
+          <p class="section-label">03 — <span>Cloud architecture</span></p>
+          <h2 id="hashop-cloud-title">Managed AWS services connect the storefront, APIs and workers</h2>
+          <p>The architecture combines synchronous service calls for user-facing requests with asynchronous messaging for payment results and order notifications.</p>
+        </div>
+        <div class="architecture-grid hashop-architecture-grid">
+          <article><span>01</span><h3>Edge delivery</h3><p>WAF protects CloudFront, which serves the S3 frontend and forwards /api requests to the ALB.</p></article>
+          <article><span>02</span><h3>Managed identity</h3><p>Cognito handles registration, email confirmation and JWTs; Admin and Customer groups drive authorization.</p></article>
+          <article><span>03</span><h3>Private containers</h3><p>Six APIs and three workers run on ECS Fargate without public IP addresses.</p></article>
+          <article><span>04</span><h3>Service discovery</h3><p>Service Connect and Cloud Map provide stable internal names for calls between domain services.</p></article>
+          <article><span>05</span><h3>Event-driven orders</h3><p>SNS, SQS and dead-letter queues decouple payment processing, order updates and SES email delivery.</p></article>
+          <article><span>06</span><h3>Domain-owned data</h3><p>Six schemas share one private Multi-AZ RDS MySQL instance, while product images live in S3.</p></article>
+        </div>
+      </section>
+
+      <section class="project-outcome hashop-outcome" aria-labelledby="hashop-outcome-title">
+        <p class="section-label">04 — <span>Result</span></p>
+        <h2 id="hashop-outcome-title">A reproducible cloud-native commerce prototype</h2>
+        <p>HaShop delivers a complete customer and admin workflow while demonstrating containerized microservices, transactional inventory handling, asynchronous order processing, managed authentication and Infrastructure as Code. The accompanying technical deep dive follows the implementation directly from infrastructure and service source code.</p>
+        <a class="project-detail-link" href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-1"><span>Read the technical deep dive</span><span aria-hidden="true">→</span></a>
+      </section>
+    </article>
+
+    <article class="technical-shell hashop-technical-shell" data-project-page="hashop-technical" hidden>
+      <header class="technical-hero">
+        <div class="technical-eyebrow"><span>3.1</span><span>Engineering case study</span></div>
+        <h1>Inside HaShop</h1>
+        <p>How six APIs, three workers and managed AWS services coordinate identity, catalog, inventory, checkout, payment and notifications.</p>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/cloudformation" target="_blank" rel="noopener noreferrer"><span>View CloudFormation</span><span aria-hidden="true">↗</span></a>
+          <div class="technical-repo-dropdown">
+            <button class="technical-action technical-repo-trigger" type="button" aria-haspopup="menu">
+              <span>Service repositories</span><span class="repo-caret" aria-hidden="true">⌄</span>
+            </button>
+            <div class="technical-repo-menu" role="menu" aria-label="HaShop service repositories">
+              <a role="menuitem" href="https://github.com/Leviethaidang/User-Service" target="_blank" rel="noopener noreferrer"><span>User Service</span><span aria-hidden="true">↗</span></a>
+              <a role="menuitem" href="https://github.com/Leviethaidang/Product-Service" target="_blank" rel="noopener noreferrer"><span>Product Service</span><span aria-hidden="true">↗</span></a>
+              <a role="menuitem" href="https://github.com/Leviethaidang/Inventory-Service" target="_blank" rel="noopener noreferrer"><span>Inventory Service</span><span aria-hidden="true">↗</span></a>
+              <a role="menuitem" href="https://github.com/Leviethaidang/Cart-Service" target="_blank" rel="noopener noreferrer"><span>Cart Service</span><span aria-hidden="true">↗</span></a>
+              <a role="menuitem" href="https://github.com/Leviethaidang/Order-Service" target="_blank" rel="noopener noreferrer"><span>Order Service</span><span aria-hidden="true">↗</span></a>
+              <a role="menuitem" href="https://github.com/Leviethaidang/Payment-Service" target="_blank" rel="noopener noreferrer"><span>Payment Service</span><span aria-hidden="true">↗</span></a>
+              <a role="menuitem" href="https://github.com/Leviethaidang/Notification-Service" target="_blank" rel="noopener noreferrer"><span>Notification Service</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <aside class="unity-warning hashop-baseline-note" aria-labelledby="hashop-baseline-title">
+          <div class="warning-mark" aria-hidden="true">i</div>
+          <div>
+            <h2 id="hashop-baseline-title">Implementation baseline</h2>
+            <p>This case study was verified directly against the seven service repositories and the current 00–03 CloudFormation templates. The diagram summarizes the topology, while source code and templates remain the implementation source of truth.</p>
+          </div>
+        </aside>
+      </header>
+
+      <nav class="technical-toc" aria-label="On this page">
+        <a href="#hashop-tech-architecture"><span>01</span><span>Architecture</span></a>
+        <a href="#hashop-tech-services"><span>02</span><span>Service boundaries</span></a>
+        <a href="#hashop-tech-security"><span>03</span><span>Identity &amp; security</span></a>
+        <a href="#hashop-tech-orders"><span>04</span><span>Order workflow</span></a>
+        <a href="#hashop-tech-inventory"><span>05</span><span>Data consistency</span></a>
+        <a href="#hashop-tech-iac"><span>06</span><span>Infrastructure as Code</span></a>
+        <a href="#hashop-tech-reflection"><span>07</span><span>Engineering reflection</span></a>
+      </nav>
+
+      <section class="technical-section" id="hashop-tech-architecture">
+        <div class="technical-heading">
+          <p class="section-label">01 — <span>System architecture</span></p>
+          <h2>One public entry point, private compute and two communication modes</h2>
+          <p>CloudFront is the public entry point for both the static storefront and /api traffic. Requests that need a response immediately pass through the ALB to an API service; payment and notification work moves through SNS and SQS so workers can process it independently.</p>
+        </div>
+
+        <div class="system-flow" aria-label="HaShop architecture flow">
+          <article><span>01</span><h3>Edge</h3><p>WAF inspects traffic; CloudFront serves the S3 frontend and routes API paths.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02</span><h3>Request routing</h3><p>The ALB maps /api/users, products, inventory, cart, orders and payments to target groups.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03</span><h3>Private compute</h3><p>ECS Fargate runs six API services and three workers without public IP addresses.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>04</span><h3>State &amp; events</h3><p>RDS stores six schemas; S3 stores images; SNS/SQS carries asynchronous work.</p></article>
+        </div>
+
+        <figure class="hashop-architecture-figure">
+          <div class="hashop-architecture-viewport"><img src="assets/projects/hashop/hashop-architecture.png" alt="HaShop AWS architecture diagram showing CloudFront, Cognito, ECS Fargate, RDS and SNS/SQS"></div>
+          <figcaption><strong>End-to-end AWS topology</strong><span>The diagram separates edge delivery, authentication, private application workloads, relational data and the asynchronous messaging layer.</span></figcaption>
+        </figure>
+
+        <div class="technical-stats" aria-label="HaShop technical scale">
+          <div><strong>7</strong><span>business domains</span></div>
+          <div><strong>9</strong><span>ECS services</span></div>
+          <div><strong>64</strong><span>Express API routes</span></div>
+          <div><strong>4</strong><span>ordered infrastructure stacks</span></div>
+        </div>
+      </section>
+
+      <section class="technical-section" id="hashop-tech-services">
+        <div class="technical-heading">
+          <p class="section-label">02 — <span>Service boundaries</span></p>
+          <h2>Each domain owns a focused responsibility and deployable workload</h2>
+          <p>The backend is split by business capability rather than by technical layer. Six domains expose HTTP APIs; Payment and Order also deploy workers, while Notification is worker-only so processing can continue outside the original request.</p>
+        </div>
+
+        <div class="technical-split">
+          <div>
+            <h3>Repository map</h3>
+            <p>Each deployable backend has its own package manifest and Dockerfile. The Cognito post-confirmation Lambda creates the relational user record after account confirmation.</p>
+          </div>
+          <pre class="code-tree" aria-label="HaShop repository tree"><code>HaShop/
+├── Front-end/                  <span>// static storefront + admin</span>
+├── User Service/              <span>// Cognito &amp; profiles</span>
+├── Product Service/           <span>// catalog &amp; variants</span>
+├── Inventory Service/         <span>// stock state machine</span>
+├── Cart Service/              <span>// persistent carts</span>
+├── Order Service/             <span>// API + payment-result worker</span>
+├── Payment Service/           <span>// API + payment worker</span>
+├── Notification Service/      <span>// email worker</span>
+└── cognito-post-confirmation-db/ <span>// Lambda trigger</span></code></pre>
+        </div>
+
+        <div class="factory-table-wrap">
+          <h3>Seven business domains</h3>
+          <div class="factory-table hashop-service-table">
+            <article><b>01</b><h4>User</h4><p>Registration, Cognito sign-in, profiles, roles and admin user management.</p></article>
+            <article><b>02</b><h4>Product</h4><p>Catalog, categories, sizes, colors, variants and S3 pre-signed image uploads.</p></article>
+            <article><b>03</b><h4>Inventory</h4><p>On-hand, reserved and sold quantities with an auditable movement log.</p></article>
+            <article><b>04</b><h4>Cart</h4><p>Per-user carts that revalidate product and inventory data before checkout.</p></article>
+            <article><b>05</b><h4>Order</h4><p>Checkout snapshots, lifecycle transitions and payment-result consumption.</p></article>
+            <article><b>06</b><h4>Payment</h4><p>Saved methods plus deterministic simulated processing for the demo environment.</p></article>
+            <article><b>07</b><h4>Notification</h4><p>Consumes order events and sends customer or admin email through Amazon SES.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="technical-section" id="hashop-tech-security">
+        <div class="technical-heading">
+          <p class="section-label">03 — <span>Identity &amp; security</span></p>
+          <h2>Trust is checked at the edge, network and application layers</h2>
+          <p>Public requests first meet WAF and CloudFront. Protected APIs verify Cognito access tokens, admin operations inspect the cognito:groups claim, and internal calls require a shared secret injected from Secrets Manager.</p>
+        </div>
+
+        <div class="simulation-grid">
+          <article><span>01</span><h3>Edge filtering</h3><p>Managed common, bad-input and IP-reputation rules are combined with a per-IP rate limit.</p></article>
+          <article><span>02</span><h3>Managed identity</h3><p>Cognito issues access tokens and triggers Lambda after confirmation to synchronize the user database.</p></article>
+          <article><span>03</span><h3>Private runtime</h3><p>ECS tasks and RDS stay in private subnets; security groups restrict ALB, service and database traffic.</p></article>
+          <article><span>04</span><h3>Private AWS access</h3><p>VPC endpoints cover S3, ECR, Logs, Secrets Manager, SNS and SQS to reduce public egress dependency.</p></article>
+        </div>
+
+        <div class="code-explainer">
+          <div class="code-copy">
+            <span class="code-file">Product Service/server.js</span>
+            <h3>JWT verification and role authorization</h3>
+            <p>Every protected service validates an access token against the configured user pool and client. Admin routes add a second check for membership in the Admin group.</p>
+            <a href="https://github.com/Leviethaidang/Product-Service/blob/main/server.js" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+          <pre><code>const verifier = CognitoJwtVerifier.create({
+  userPoolId: process.env.COGNITO_USER_POOL_ID,
+  tokenUse: "access",
+  clientId: process.env.COGNITO_APP_CLIENT_ID
+});
+
+const payload = await verifier.verify(token);
+const groups = payload["cognito:groups"] || [];
+
+if (!groups.includes("Admin")) {
+  return res.status(403).json({ error: "Forbidden" });
+}</code></pre>
+        </div>
+
+        <div class="decision-note">
+          <h3>Defense-in-depth choices</h3>
+          <ul>
+            <li>S3 origins are private and accessed from CloudFront through Origin Access Control.</li>
+            <li>ECS tasks receive IAM roles and runtime secrets instead of static AWS access keys.</li>
+            <li>Service Connect and Cloud Map replace hard-coded task IP addresses.</li>
+            <li>RDS is not publicly accessible and accepts MySQL traffic only from approved security groups.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="technical-section" id="hashop-tech-orders">
+        <div class="technical-heading">
+          <p class="section-label">04 — <span>Order workflow</span></p>
+          <h2>Checkout crosses services without keeping the browser request open</h2>
+          <p>Order Service records a price and variant snapshot, reserves inventory and returns the created order. Non-COD payments continue as events: Payment Worker processes the request, Order Worker applies the result and Notification Worker sends the relevant email.</p>
+        </div>
+
+        <div class="logistics-pipeline hashop-event-pipeline">
+          <article><span>01</span><h3>Create snapshot</h3><p>Persist receiver, price, payment and order-item data.</p></article>
+          <article><span>02</span><h3>Reserve stock</h3><p>Inventory locks variants and increments reserved quantities.</p></article>
+          <article><span>03</span><h3>Request payment</h3><p>Order API publishes PaymentRequested through SNS to SQS.</p></article>
+          <article><span>04</span><h3>Process once</h3><p>Payment Worker reuses an existing transaction for duplicate order events.</p></article>
+          <article><span>05</span><h3>Apply result</h3><p>Order Worker locks the order row and skips cancelled or already-paid states.</p></article>
+          <article><span>06</span><h3>Notify</h3><p>A separate queue drives SES emails after order-state changes.</p></article>
+        </div>
+
+        <div class="code-explainer code-explainer--reverse">
+          <pre><code><span class="code-keyword">// Simplified from the checkout route</span>
+const order = await createOrderInDatabase(input);
+
+try {
+  await reserveInventoryForOrder(order);
+} catch (error) {
+  await dbPool.execute("DELETE FROM orders WHERE order_id = ?", [order.orderId]);
+  throw error;
+}
+
+try {
+  await publishPaymentRequested(order);
+} catch (error) {
+  await releaseInventoryForOrder(order);
+  await dbPool.execute("DELETE FROM orders WHERE order_id = ?", [order.orderId]);
+  throw error;
+}</code></pre>
+          <div class="code-copy">
+            <span class="code-file">Order Service/server.js</span>
+            <h3>Compensation when the workflow cannot continue</h3>
+            <p>If inventory reservation fails, the new order is removed. If payment-event publishing fails after reservation, Order Service releases the stock before removing the order.</p>
+            <a href="https://github.com/Leviethaidang/Order-Service/blob/main/server.js" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="technical-section" id="hashop-tech-inventory">
+        <div class="technical-heading">
+          <p class="section-label">05 — <span>Data consistency</span></p>
+          <h2>Stock moves through explicit states instead of one destructive decrement</h2>
+          <p>Inventory keeps quantity_on_hand, quantity_reserved and quantity_sold separately. Each transition executes in a MySQL transaction, locks the affected variant rows and writes an inventory movement linked to the order.</p>
+        </div>
+
+        <div class="placement-cards">
+          <article><b>Reserve</b><p>Lock available stock during checkout without removing it from on-hand quantity.</p></article>
+          <article><b>Release</b><p>Return reserved stock after cancellation, failure or an abandoned workflow.</p></article>
+          <article><b>Commit</b><p>Decrease on-hand and reserved quantities when fulfillment begins.</p></article>
+          <article><b>Mark sold</b><p>Increase the sold counter when the order reaches its completed state.</p></article>
+        </div>
+
+        <div class="code-explainer">
+          <div class="code-copy">
+            <span class="code-file">Inventory Service/server.js</span>
+            <h3>Row locks prevent two checkouts from spending the same stock</h3>
+            <p>SELECT ... FOR UPDATE serializes changes to each variant inside the transaction. The service checks available quantity before updating reserved stock and commits all requested items together.</p>
+            <a href="https://github.com/Leviethaidang/Inventory-Service/blob/main/server.js" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+          <pre><code>await connection.beginTransaction();
+
+SELECT quantity_on_hand, quantity_reserved
+FROM inventory_items
+WHERE variant_id = ?
+FOR UPDATE;
+
+available = quantity_on_hand - quantity_reserved;
+if (available &lt; requested) await connection.rollback();
+
+UPDATE inventory_items
+SET quantity_reserved = quantity_reserved + ?;
+
+await connection.commit();</code></pre>
+        </div>
+
+        <div class="decision-note">
+          <h3>Consistency boundary</h3>
+          <ul>
+            <li>A local database transaction protects each mutation within Inventory or Order Service.</li>
+            <li>Cross-service checkout is a compensating workflow, not one distributed ACID transaction.</li>
+            <li>Payment Worker checks order_id first and re-publishes the stored result on a sequential redelivery.</li>
+            <li>Six logical schemas currently share one private RDS MySQL primary configured for Multi-AZ availability.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="technical-section" id="hashop-tech-iac">
+        <div class="technical-heading">
+          <p class="section-label">06 — <span>Infrastructure as Code</span></p>
+          <h2>Four ordered stacks recreate the environment in controlled layers</h2>
+          <p>The templates separate global edge security from regional foundations, application workloads and one-time database initialization. Stack outputs become explicit inputs for later stacks, reducing manual resource wiring.</p>
+        </div>
+
+        <div class="system-flow hashop-stack-flow" aria-label="HaShop CloudFormation deployment order">
+          <article><span>00</span><h3>Global WAF</h3><p>Deploy the CloudFront Web ACL in us-east-1 and export its ARN.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>01</span><h3>Foundation</h3><p>Create network, RDS, Cognito, messaging, S3, CloudFront, ALB, IAM and ECS cluster.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02</span><h3>ECS services</h3><p>Create nine task definitions and services from supplied container image URIs.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03</span><h3>DB initialization</h3><p>Use a temporary private EC2 instance to create six schemas and bootstrap the admin account.</p></article>
+        </div>
+
+        <div class="code-explainer">
+          <div class="code-copy">
+            <span class="code-file">02-cf-hashop-ecs-services.yaml</span>
+            <h3>Exports make stack dependencies visible</h3>
+            <p>The workload stack imports the ECS cluster, private subnets, security groups, target groups, discovery namespace and Secrets Manager ARNs from the foundation stack.</p>
+            <a href="https://github.com/Leviethaidang/cloudformation/blob/main/02-cf-hashop-ecs-services.yaml" target="_blank" rel="noopener noreferrer"><span>Open source file</span> ↗</a>
+          </div>
+          <pre><code>Cluster:
+  Fn::ImportValue:
+    Fn::Sub: '${FoundationStackName}-EcsClusterName'
+
+NetworkConfiguration:
+  AwsvpcConfiguration:
+    AssignPublicIp: DISABLED
+    Subnets:
+      - Fn::ImportValue:
+          Fn::Sub: '${FoundationStackName}-PrivateAppSubnetA'</code></pre>
+        </div>
+
+        <aside class="source-guide hashop-artifact-guide">
+          <div>
+            <p class="section-label">Artifact boundary</p>
+            <h3>Infrastructure is reproducible; application artifacts are prepared first</h3>
+            <p>CloudFormation does not build code, create the seven ECR repositories or publish the frontend. Deployment therefore starts by packaging the Lambda ZIP, building and pushing container images, and preparing the static frontend and SES identities.</p>
+          </div>
+          <ol>
+            <li><a href="https://github.com/Leviethaidang/cloudformation/blob/main/00-cf-hashop-global-waf.yaml" target="_blank" rel="noopener noreferrer">00 — Global WAF <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/cloudformation/blob/main/01-cf-hashop-foundation.yaml" target="_blank" rel="noopener noreferrer">01 — Foundation <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/cloudformation/blob/main/02-cf-hashop-ecs-services.yaml" target="_blank" rel="noopener noreferrer">02 — ECS services <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/cloudformation/blob/main/03-cf-hashop-db-init.yaml" target="_blank" rel="noopener noreferrer">03 — Database init <span>↗</span></a></li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="technical-section" id="hashop-tech-reflection">
+        <div class="technical-heading">
+          <p class="section-label">07 — <span>Engineering reflection</span></p>
+          <h2>What I would harden before calling the system production-ready</h2>
+          <p>The prototype demonstrates clear service boundaries, private cloud networking and failure-aware commerce logic. A production iteration would focus on stronger delivery guarantees, automated operations and keeping every architecture artifact synchronized with the deployed templates.</p>
+        </div>
+        <div class="reflection-list">
+          <article><span>01</span><div><h3>Standardize event reliability</h3><p>Add an outbox pattern, correlation IDs and idempotency records for every consumer so database writes and event publishing cannot diverge.</p></div></article>
+          <article><span>02</span><div><h3>Strengthen service-to-service identity</h3><p>Replace the shared internal API key with scoped workload identity or signed requests and rotate credentials automatically.</p></div></article>
+          <article><span>03</span><div><h3>Evolve the data topology</h3><p>Move from logical schemas on one RDS primary toward service-owned databases where operational scale justifies it, then add explicit read-scaling resources when required.</p></div></article>
+          <article><span>04</span><div><h3>Automate delivery and verification</h3><p>Build CI/CD for images and frontend artifacts, add contract/integration tests, enable autoscaling and turn the documented CloudWatch signals into alarms.</p></div></article>
+          <article><span>05</span><div><h3>Keep diagrams and templates synchronized</h3><p>Generate diagrams from Infrastructure as Code or validate them in CI so the visual architecture cannot drift from the resources that are actually provisioned.</p></div></article>
+        </div>
+
+        <aside class="source-guide">
+          <div>
+            <p class="section-label">Recommended code-reading path</p>
+            <h3>Follow one checkout from the browser to inventory, payment and email</h3>
+          </div>
+          <ol>
+            <li><a href="https://github.com/Leviethaidang/Order-Service/blob/main/server.js" target="_blank" rel="noopener noreferrer">Order Service / server.js <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/Inventory-Service/blob/main/server.js" target="_blank" rel="noopener noreferrer">Inventory Service / server.js <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/Payment-Service/blob/main/worker.js" target="_blank" rel="noopener noreferrer">Payment Service / worker.js <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/Order-Service/blob/main/worker.js" target="_blank" rel="noopener noreferrer">Order Service / worker.js <span>↗</span></a></li>
+            <li><a href="https://github.com/Leviethaidang/Notification-Service/blob/main/worker.js" target="_blank" rel="noopener noreferrer">Notification Service / worker.js <span>↗</span></a></li>
+          </ol>
+        </aside>
+      </section>
+
+      <footer class="technical-footer">
+        <div>
+          <p class="section-label">Explore the implementation</p>
+          <h2>Review the infrastructure and service code directly</h2>
+          <p>CloudFormation and the service repositories expose the implementation behind the architecture, including routing, security, transactions and asynchronous workers.</p>
+        </div>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/cloudformation" target="_blank" rel="noopener noreferrer"><span>View CloudFormation</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="https://github.com/Leviethaidang/Order-Service" target="_blank" rel="noopener noreferrer"><span>View Order Service</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </footer>
+    </article>
+
+    <article class="technical-shell hashop-reproduction-shell" data-project-page="hashop-reproduction" hidden>
+      <header class="technical-hero reproduction-hero">
+        <div class="technical-eyebrow"><span>3.2</span><span>Deployment runbook</span></div>
+        <h1>Rebuild HaShop</h1>
+        <p>A source-backed path from an empty AWS account to the distributed ECS deployment, including every artifact that Infrastructure as Code expects.</p>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/cloudformation" target="_blank" rel="noopener noreferrer"><span>Open CloudFormation</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="https://github.com/Leviethaidang/Front-end" target="_blank" rel="noopener noreferrer"><span>Open frontend source</span><span aria-hidden="true">↗</span></a>
+        </div>
+
+        <aside class="reproduction-contract" aria-labelledby="har-contract-title">
+          <div class="warning-mark" aria-hidden="true">!</div>
+          <div>
+            <h2 id="har-contract-title">Know the artifact boundary before deploying</h2>
+            <p>The four templates recreate AWS infrastructure, but they do not create ECR repositories, build container images, package the Cognito Lambda or publish the static frontend. Prepare those inputs first, then deploy stacks 00 → 03 in order.</p>
+          </div>
+        </aside>
+
+        <div class="technical-stats reproduction-stats" aria-label="Deployment scope">
+          <div><strong>2</strong><span>AWS regions</span></div>
+          <div><strong>4</strong><span>ordered stacks</span></div>
+          <div><strong>7</strong><span>container images</span></div>
+          <div><strong>1</strong><span>Lambda ZIP artifact</span></div>
+        </div>
+      </header>
+
+      <section class="reproduction-mode" aria-labelledby="hashop-reproduction-mode-title">
+        <div>
+          <p class="section-label">Deployment format</p>
+          <h2 id="hashop-reproduction-mode-title">Choose how to follow the runbook</h2>
+          <p>The CLI view is the concise automation path. The AWS Console view preserves the full practical workshop, screenshots and supporting local preparation commands.</p>
+        </div>
+        <div class="reproduction-mode-switch" role="tablist" aria-label="Deployment guide format">
+          <button type="button" role="tab" id="hashop-reproduction-tab-cli" aria-controls="hashop-reproduction-panel-cli" aria-selected="true" tabindex="0" data-reproduction-mode="cli">
+            <span>01</span>
+            <strong>CLI</strong>
+            <small>Concise runbook</small>
+          </button>
+          <button type="button" role="tab" id="hashop-reproduction-tab-console" aria-controls="hashop-reproduction-panel-console" aria-selected="false" tabindex="-1" data-reproduction-mode="console">
+            <span>02</span>
+            <strong>AWS Console</strong>
+            <small>Full visual workshop</small>
+          </button>
+        </div>
+      </section>
+
+      <div class="reproduction-mode-panel" id="hashop-reproduction-panel-cli" role="tabpanel" aria-labelledby="hashop-reproduction-tab-cli" data-reproduction-mode-panel="cli">
+      <nav class="technical-toc reproduction-toc" aria-label="CLI runbook sections">
+        <a href="#hashop-repro-prerequisites"><span>01</span><span>Prerequisites</span></a>
+        <a href="#hashop-repro-artifacts"><span>02</span><span>Prepare artifacts</span></a>
+        <a href="#hashop-repro-stacks"><span>03</span><span>Deploy 00–03</span></a>
+        <a href="#hashop-repro-frontend"><span>04</span><span>Publish frontend</span></a>
+        <a href="#hashop-repro-handoff"><span>05</span><span>Verify &amp; clean up</span></a>
+      </nav>
+
+      <section class="technical-section" id="hashop-repro-prerequisites">
+        <div class="technical-heading">
+          <p class="section-label">01 — <span>Prerequisites</span></p>
+          <h2>Start with an authenticated workstation and two-region plan</h2>
+          <p>The main environment runs in Singapore. Only the CloudFront-scoped WAF stack belongs in N. Virginia, because AWS requires global CloudFront Web ACLs to be created in us-east-1.</p>
+        </div>
+
+        <div class="reproduction-requirements">
+          <article>
+            <span>ACCOUNT</span>
+            <h3>AWS access</h3>
+            <p>Use an account allowed to manage CloudFormation, IAM, VPC, ECS, ECR, RDS, Cognito, Lambda, S3, CloudFront, WAF, SNS, SQS, SES, Secrets Manager and CloudWatch.</p>
+          </article>
+          <article>
+            <span>LOCAL</span>
+            <h3>Local toolchain</h3>
+            <p>Install Git, Node.js with npm, Docker Desktop, AWS CLI v2 and PowerShell. Docker must be running before the image stage.</p>
+          </article>
+          <article>
+            <span>REGIONS</span>
+            <h3>Deployment split</h3>
+            <p><code>us-east-1</code> — <span>global WAF</span><br><code>ap-southeast-1</code> — <span>application infrastructure</span></p>
+          </article>
+          <article>
+            <span>IDENTITY</span>
+            <h3>Email identities</h3>
+            <p>Verify the SES sender address in ap-southeast-1. While SES remains in sandbox, verify every recipient used during the smoke check as well.</p>
+          </article>
+        </div>
+
+        <div class="reproduction-terminal">
+          <div class="reproduction-terminal-head"><span>PowerShell — establish the deployment context</span><b>PS</b></div>
+          <pre><code>aws sts get-caller-identity
+
+$WORKSPACE       = "D:\HaShop-release"
+$MAIN_REGION     = "ap-southeast-1"
+$EDGE_REGION     = "us-east-1"
+$ACCOUNT_ID      = aws sts get-caller-identity --query Account --output text
+$ECR             = "$ACCOUNT_ID.dkr.ecr.$MAIN_REGION.amazonaws.com"
+$ARTIFACT_BUCKET = "hashop-artifacts-$ACCOUNT_ID-$MAIN_REGION"
+
+$ADMIN_EMAIL     = "&lt;verified-admin-email&gt;"
+$SES_FROM_EMAIL  = "&lt;verified-sender-email&gt;"
+$DB_PASSWORD     = "&lt;unique-database-password&gt;"
+$INTERNAL_API_KEY = "&lt;random-value-at-least-16-characters&gt;"
+
+New-Item -ItemType Directory -Force -Path $WORKSPACE
+Set-Location $WORKSPACE</code></pre>
+        </div>
+        <p class="reproduction-guardrail">Keep passwords and API keys outside source control and terminal screenshots. CloudFormation marks these parameters NoEcho, but local command history still requires care.</p>
+      </section>
+
+      <section class="technical-section" id="hashop-repro-artifacts">
+        <div class="technical-heading">
+          <p class="section-label">02 — <span>Prepare application artifacts</span></p>
+          <h2>Package what CloudFormation references but does not build</h2>
+          <p>The foundation template expects a Lambda package in S3. The ECS template expects seven resolvable ECR image URIs. Creating these inputs before stack deployment prevents task-definition and Lambda creation failures.</p>
+        </div>
+
+        <div class="reproduction-pipeline">
+          <article><span>01</span><h3>Secure artifact bucket</h3><p>Create a private, encrypted S3 bucket in ap-southeast-1.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02</span><h3>Package Lambda</h3><p>Install production dependencies, create function.zip and upload the expected S3 key.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03</span><h3>Publish images</h3><p>Create seven ECR repositories, then build or load and push each latest image.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>04</span><h3>Check inputs</h3><p>Confirm the ZIP and all seven image tags exist before creating stack 01.</p></article>
+        </div>
+
+        <div class="reproduction-command-grid">
+          <div class="reproduction-terminal">
+            <div class="reproduction-terminal-head"><span>Artifact bucket and Cognito Lambda</span><b>S3</b></div>
+            <pre><code>aws s3api create-bucket `
+  --bucket $ARTIFACT_BUCKET `
+  --region $MAIN_REGION `
+  --create-bucket-configuration LocationConstraint=$MAIN_REGION
+
+aws s3api put-public-access-block `
+  --bucket $ARTIFACT_BUCKET `
+  --public-access-block-configuration `
+  BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true
+
+aws s3api put-bucket-encryption `
+  --bucket $ARTIFACT_BUCKET `
+  --server-side-encryption-configuration `
+  '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}'
+
+git clone https://github.com/Leviethaidang/cognito-post-confirmation-db.git
+Push-Location .\cognito-post-confirmation-db
+npm ci --omit=dev
+Compress-Archive `
+  -Path .\index.js,.\node_modules,.\package.json,.\package-lock.json `
+  -DestinationPath .\function.zip -Force
+aws s3 cp .\function.zip `
+  "s3://$ARTIFACT_BUCKET/lambda/post-confirmation/function.zip" `
+  --region $MAIN_REGION
+Pop-Location</code></pre>
+          </div>
+
+          <div class="reproduction-terminal">
+            <div class="reproduction-terminal-head"><span>ECR repositories and source builds</span><b>ECR</b></div>
+            <pre><code>$SERVICES = @(
+  @{Git="User-Service";         Ecr="hashop/user-service"},
+  @{Git="Product-Service";      Ecr="hashop/product-service"},
+  @{Git="Inventory-Service";    Ecr="hashop/inventory-service"},
+  @{Git="Cart-Service";         Ecr="hashop/cart-service"},
+  @{Git="Order-Service";        Ecr="hashop/order-service"},
+  @{Git="Payment-Service";      Ecr="hashop/payment-service"},
+  @{Git="Notification-Service"; Ecr="hashop/notification-service"}
+)
+
+foreach ($service in $SERVICES) {
+  aws ecr describe-repositories `
+    --repository-names $service.Ecr --region $MAIN_REGION *> $null
+  if ($LASTEXITCODE -ne 0) {
+    aws ecr create-repository --repository-name $service.Ecr `
+      --image-scanning-configuration scanOnPush=true --region $MAIN_REGION
+  }
+}
+
+aws ecr get-login-password --region $MAIN_REGION |
+  docker login --username AWS --password-stdin $ECR
+
+foreach ($service in $SERVICES) {
+  git clone "https://github.com/Leviethaidang/$($service.Git).git"
+  $image = "$ECR/$($service.Ecr):latest"
+  docker build -t $image ".\$($service.Git)"
+  docker push $image
+}</code></pre>
+          </div>
+        </div>
+
+        <aside class="reproduction-option">
+          <div>
+            <p class="section-label">Release artifact option</p>
+            <h3>Use the tested image bundle when source builds are not the focus</h3>
+            <p>The saved release bundle contains seven Docker image archives. Load each archive, retag it with the matching ECR URI and push the latest tag; the infrastructure workflow remains unchanged.</p>
+          </div>
+          <a href="https://drive.google.com/file/d/1o9IrPV95KHFCW1tLL5gyHjRJ-FIiyEql/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>Download image bundle</span><span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+
+      <section class="technical-section" id="hashop-repro-stacks">
+        <div class="technical-heading">
+          <p class="section-label">03 — <span>Deploy CloudFormation</span></p>
+          <h2>Create the environment in four dependency-aware layers</h2>
+          <p>Do not skip the order. Stack 00 supplies the Web ACL ARN to stack 01; stack 01 exports networking, security, data and messaging resources consumed by stacks 02 and 03.</p>
+        </div>
+
+        <div class="system-flow reproduction-stack-flow" aria-label="HaShop CloudFormation deployment order">
+          <article><span>00 · us-east-1</span><h3>Global WAF</h3><p>Create the CloudFront Web ACL and capture FrontendWebAclArn.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>01 · ap-southeast-1</span><h3>Foundation</h3><p>Provision network, RDS, Cognito, messaging, edge delivery, IAM and ECS cluster.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>02 · ap-southeast-1</span><h3>ECS workloads</h3><p>Create six APIs and three workers from the seven published images.</p></article>
+          <i aria-hidden="true">→</i>
+          <article><span>03 · ap-southeast-1</span><h3>Database bootstrap</h3><p>Run one temporary private EC2 initializer for six schemas and the first admin.</p></article>
+        </div>
+
+        <div class="reproduction-stack-list">
+          <article>
+            <div class="reproduction-stack-index"><span>00</span><b>us-east-1</b></div>
+            <div class="reproduction-stack-copy">
+              <h3>Deploy the global edge policy</h3>
+              <p>Use matching ProjectName and EnvironmentName values across stacks. Wait for CREATE_COMPLETE, then read FrontendWebAclArn from outputs.</p>
+              <div class="reproduction-terminal reproduction-terminal--compact">
+                <pre><code>git clone https://github.com/Leviethaidang/cloudformation.git
+
+aws cloudformation deploy `
+  --template-file .\cloudformation\00-cf-hashop-global-waf.yaml `
+  --stack-name HaShop-WAF `
+  --region $EDGE_REGION `
+  --parameter-overrides ProjectName=cf-hashop EnvironmentName=test
+
+$WAF_ARN = aws cloudformation describe-stacks `
+  --stack-name HaShop-WAF --region $EDGE_REGION `
+  --query "Stacks[0].Outputs[?OutputKey=='FrontendWebAclArn'].OutputValue" `
+  --output text</code></pre>
+              </div>
+              <span class="reproduction-checkpoint"><b>Checkpoint</b> <span>WAF stack is complete and $WAF_ARN is not empty.</span></span>
+            </div>
+          </article>
+
+          <article>
+            <div class="reproduction-stack-index"><span>01</span><b>ap-southeast-1</b></div>
+            <div class="reproduction-stack-copy">
+              <h3>Build the regional foundation</h3>
+              <p>Pass the Lambda artifact location, WAF ARN, verified emails and unique secrets. Named-IAM acknowledgement is required.</p>
+              <div class="reproduction-terminal reproduction-terminal--compact">
+                <pre><code>aws cloudformation deploy `
+  --template-file .\cloudformation\01-cf-hashop-foundation.yaml `
+  --stack-name cf-hashop-foundation `
+  --region $MAIN_REGION `
+  --capabilities CAPABILITY_NAMED_IAM `
+  --parameter-overrides `
+    DbPassword="$DB_PASSWORD" `
+    InternalApiKey="$INTERNAL_API_KEY" `
+    AdminEmail="$ADMIN_EMAIL" `
+    SesFromEmail="$SES_FROM_EMAIL" `
+    LambdaCodeS3Bucket="$ARTIFACT_BUCKET" `
+    LambdaCodeS3Key="lambda/post-confirmation/function.zip" `
+    FrontendWebAclArn="$WAF_ARN"</code></pre>
+              </div>
+              <span class="reproduction-checkpoint"><b>Checkpoint</b> <span>Foundation reaches CREATE_COMPLETE and exposes CloudFront, S3, Cognito, RDS and ECS outputs.</span></span>
+            </div>
+          </article>
+
+          <article>
+            <div class="reproduction-stack-index"><span>02</span><b>ap-southeast-1</b></div>
+            <div class="reproduction-stack-copy">
+              <h3>Launch APIs and workers</h3>
+              <p>Replace every image parameter with the ECR URI published in step 02. Keep FoundationStackName aligned with the actual stack name.</p>
+              <div class="reproduction-terminal reproduction-terminal--compact">
+                <pre><code>aws cloudformation deploy `
+  --template-file .\cloudformation\02-cf-hashop-ecs-services.yaml `
+  --stack-name cf-hashop-ecs `
+  --region $MAIN_REGION `
+  --parameter-overrides `
+    FoundationStackName=cf-hashop-foundation `
+    UserServiceImageUri="$ECR/hashop/user-service:latest" `
+    ProductServiceImageUri="$ECR/hashop/product-service:latest" `
+    InventoryServiceImageUri="$ECR/hashop/inventory-service:latest" `
+    CartServiceImageUri="$ECR/hashop/cart-service:latest" `
+    OrderServiceImageUri="$ECR/hashop/order-service:latest" `
+    PaymentServiceImageUri="$ECR/hashop/payment-service:latest" `
+    NotificationServiceImageUri="$ECR/hashop/notification-service:latest"</code></pre>
+              </div>
+              <span class="reproduction-checkpoint"><b>Checkpoint</b> <span>Nine ECS services reach their desired count; the six API target groups show healthy tasks.</span></span>
+            </div>
+          </article>
+
+          <article>
+            <div class="reproduction-stack-index"><span>03</span><b>ap-southeast-1</b></div>
+            <div class="reproduction-stack-copy">
+              <h3>Initialize schemas and bootstrap admin</h3>
+              <p>Set a new bootstrap password instead of retaining the template default. The temporary instance signals CloudFormation after the SQL and Cognito bootstrap completes.</p>
+              <div class="reproduction-terminal reproduction-terminal--compact">
+                <pre><code>$BOOTSTRAP_ADMIN_PASSWORD = "&lt;new-unique-admin-password&gt;"
+
+aws cloudformation deploy `
+  --template-file .\cloudformation\03-cf-hashop-db-init.yaml `
+  --stack-name cf-hashop-db-init `
+  --region $MAIN_REGION `
+  --capabilities CAPABILITY_NAMED_IAM `
+  --parameter-overrides `
+    FoundationStackName=cf-hashop-foundation `
+    BootstrapAdminEmail="$ADMIN_EMAIL" `
+    BootstrapAdminPassword="$BOOTSTRAP_ADMIN_PASSWORD" `
+    BootstrapAdminFullName="HaShop Admin"</code></pre>
+              </div>
+              <span class="reproduction-checkpoint"><b>Checkpoint</b> <span>Stack reaches CREATE_COMPLETE. Delete only this stack afterward; the initialized RDS data remains in foundation.</span></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="technical-section" id="hashop-repro-frontend">
+        <div class="technical-heading">
+          <p class="section-label">04 — <span>Publish the storefront</span></p>
+          <h2>Use foundation outputs to deliver the static frontend</h2>
+          <p>HaShop's frontend is static. After stack 01 completes, synchronize the stable main branch to the generated private S3 bucket and invalidate CloudFront so the new files become visible immediately.</p>
+        </div>
+
+        <div class="code-explainer reproduction-frontend-explainer">
+          <div class="code-copy">
+            <span class="code-file">Foundation outputs → S3 → CloudFront</span>
+            <h3>Publish without hard-coding generated resource names</h3>
+            <p>Query the stack outputs for the bucket and distribution IDs. The same outputs provide the CloudFront domain used for the first smoke check.</p>
+            <a href="https://github.com/Leviethaidang/Front-end" target="_blank" rel="noopener noreferrer"><span>Open Front-end repository</span> ↗</a>
+          </div>
+          <pre><code>git clone https://github.com/Leviethaidang/Front-end.git
+
+$FRONTEND_BUCKET = aws cloudformation describe-stacks `
+  --stack-name cf-hashop-foundation --region $MAIN_REGION `
+  --query "Stacks[0].Outputs[?OutputKey=='FrontendBucketName'].OutputValue" `
+  --output text
+
+$DISTRIBUTION_ID = aws cloudformation describe-stacks `
+  --stack-name cf-hashop-foundation --region $MAIN_REGION `
+  --query "Stacks[0].Outputs[?OutputKey=='FrontendCloudFrontDistributionId'].OutputValue" `
+  --output text
+
+$FRONTEND_DOMAIN = aws cloudformation describe-stacks `
+  --stack-name cf-hashop-foundation --region $MAIN_REGION `
+  --query "Stacks[0].Outputs[?OutputKey=='FrontendCloudFrontDomainName'].OutputValue" `
+  --output text
+
+aws s3 sync .\Front-end "s3://$FRONTEND_BUCKET" `
+  --delete --region $MAIN_REGION
+
+aws cloudfront create-invalidation `
+  --distribution-id $DISTRIBUTION_ID --paths "/*"
+
+Write-Host "https://$FRONTEND_DOMAIN"</code></pre>
+        </div>
+      </section>
+
+      <section class="technical-section" id="hashop-repro-handoff">
+        <div class="technical-heading">
+          <p class="section-label">05 — <span>Deployment handoff</span></p>
+          <h2>Prove readiness, preserve evidence, then control cost</h2>
+          <p>The reproduction is complete when infrastructure state, workload health and the public entry point agree. This is a deployment smoke check; the dedicated QA page can extend it into automated service and end-to-end coverage.</p>
+        </div>
+
+        <div class="reproduction-check-grid">
+          <article><span>01</span><h3>Stack state</h3><p>00, 01 and 02 are CREATE_COMPLETE. Stack 03 completed successfully before its temporary resources were deleted.</p></article>
+          <article><span>02</span><h3>Workload health</h3><p>All nine ECS services match desired and running counts; six API target groups are healthy.</p></article>
+          <article><span>03</span><h3>Public entry point</h3><p>The CloudFront URL serves the storefront and /api/* requests reach the ALB without exposing ECS tasks.</p></article>
+          <article><span>04</span><h3>Operational evidence</h3><p>CloudWatch contains startup logs for every service and no repeated task crash, database or queue permission errors.</p></article>
+        </div>
+
+        <div class="reproduction-cleanup">
+          <div>
+            <p class="section-label">Safe teardown order</p>
+            <h3>Remove dependencies from the outside in</h3>
+            <p>Delete the database-init stack first, then ECS services. Empty generated S3 buckets before deleting foundation, remove the WAF stack afterward, and finally delete ECR repositories plus the Lambda artifact bucket.</p>
+          </div>
+          <ol>
+            <li><span>01</span><p>Delete cf-hashop-db-init.</p></li>
+            <li><span>02</span><p>Delete cf-hashop-ecs.</p></li>
+            <li><span>03</span><p>Empty frontend and product-image S3 buckets.</p></li>
+            <li><span>04</span><p>Delete cf-hashop-foundation, then HaShop-WAF.</p></li>
+            <li><span>05</span><p>Delete seven ECR repositories and the artifact bucket.</p></li>
+          </ol>
+        </div>
+
+        <aside class="reproduction-cost-note">
+          <span aria-hidden="true">$</span>
+          <div><h3>Cost-sensitive resources</h3><p>NAT Gateway, interface VPC endpoints, Application Load Balancer and Multi-AZ RDS can continue charging while idle. Tear down the lab when review and evidence collection are finished.</p></div>
+        </aside>
+      </section>
+
+      <footer class="technical-footer reproduction-footer">
+        <div>
+          <p class="section-label">Implementation sources</p>
+          <h2>The runbook stays anchored to deployable code</h2>
+          <p>Review the four templates for exact resources and return to the technical deep dive for service boundaries, order processing and data-consistency decisions.</p>
+        </div>
+        <div class="technical-actions">
+          <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/cloudformation" target="_blank" rel="noopener noreferrer"><span>Open CloudFormation</span><span aria-hidden="true">↗</span></a>
+          <a class="technical-action" href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-1"><span>Back to technical deep dive</span><span aria-hidden="true">←</span></a>
+        </div>
+      </footer>
+      </div>
+
+      <div class="reproduction-mode-panel" id="hashop-reproduction-panel-console" role="tabpanel" aria-labelledby="hashop-reproduction-tab-console" data-reproduction-mode-panel="console" hidden></div>
+    </article>
+
+    <article class="technical-shell hashop-testing-shell" data-project-page="hashop-testing" hidden></article>
+  </main>
+  <div id="overlay"></div>
+  <script src="app.js"></script>
+  <script src="empire-run.js"></script>
+  <script src="empire-run-technical.js"></script>
+  <script src="empire-run-testing.js"></script>
+  <script src="shorturl.js"></script>
+  <script src="shorturl-technical.js"></script>
+  <script src="shorturl-testing.js"></script>
+  <script src="hashop.js"></script>
+  <script src="hashop-technical.js"></script>
+  <script src="hashop-console-guide.js"></script>
+  <script src="hashop-reproduction.js"></script>
+  <script src="hashop-testing.js"></script>
+</body>
+</html>
