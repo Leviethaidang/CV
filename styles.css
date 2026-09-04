@@ -782,10 +782,10 @@ body #sidebar .search input{font-family:'Amazon Ember','Work Sans Local','Work S
 
 /* HaShop project overview */
 .hashop-shell{
-  --project-panel:#192428;
-  --project-panel-strong:#1d2b30;
-  --project-line:#375159;
-  --project-accent:#63c4d2;
+  --project-panel:#1a2425;
+  --project-panel-strong:#202d2d;
+  --project-line:#365050;
+  --project-accent:#36c7b2;
 }
 .hashop-eyebrow{
   display:flex;
@@ -827,7 +827,7 @@ body #sidebar .search input{font-family:'Amazon Ember','Work Sans Local','Work S
   font-weight:600;
   text-decoration:none;
 }
-.hashop-outcome .project-detail-link:hover{background:var(--project-accent);color:#151822}
+.hashop-outcome .project-detail-link:hover{border-color:#73e2d1;background:#73e2d1;color:#10201d}
 .hashop-outcome .project-detail-link:focus-visible{outline:2px solid var(--project-accent);outline-offset:3px}
 @media(max-width:620px){
   .hashop-admin-grid .image-viewport,.hashop-ui-shot .image-viewport{aspect-ratio:4/3}
