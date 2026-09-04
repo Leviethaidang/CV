@@ -1,24 +1,24 @@
 /* ShortURL — manual API testing */
 .shorturl-testing-shell{
-  --tech-accent:#62d7c6;
+  --tech-accent:#8f9cff;
   --project-accent:var(--tech-accent);
-  --tech-panel:#182426;
-  --tech-panel-strong:#1e2d2f;
-  --tech-line:#385153;
+  --tech-panel:#1a2028;
+  --tech-panel-strong:#202733;
+  --tech-line:#3c4858;
 }
-.shorturl-testing-shell .technical-action--primary{color:#10201f}
+.shorturl-testing-shell .technical-action--primary{color:#151822}
 .shorturl-testing-shell .technical-action--primary:hover{
-  border-color:#91eadc;
-  background:#91eadc;
-  color:#10201f;
+  border-color:#b8c0ff;
+  background:#b8c0ff;
+  color:#151822;
 }
 .shorturl-test-note{
   border-left-color:var(--tech-accent);
-  background:#1b2b2b;
+  background:#202234;
 }
 .shorturl-test-note .warning-mark{
-  border-color:#4a9f94;
-  color:#7be3d3;
+  border-color:#626fca;
+  color:#b9c0ff;
 }
 .shorturl-test-stats{margin:0 0 64px}
 .shorturl-test-scope{
@@ -58,22 +58,22 @@
   padding:15px 4px;
   border-bottom:1px solid var(--tech-line);
 }
-.shorturl-variable-list dt{color:#b8f0e7;font:13px/1.45 Consolas,'Courier New',monospace}
+.shorturl-variable-list dt{color:#b9c0ff;font:13px/1.45 Consolas,'Courier New',monospace}
 .shorturl-variable-list dd{margin:0;color:#a4b1af;font-size:13px;line-height:1.5}
 .shorturl-test-table-wrap{overflow:auto;border:1px solid var(--tech-line)}
 .shorturl-test-table{
   width:100%;
   min-width:870px;
   border-collapse:collapse;
-  background:#151d20;
+  background:#171d25;
   color:#dce4e1;
   font-size:13px;
 }
 .shorturl-test-table th,
 .shorturl-test-table td{
   padding:15px 14px;
-  border-right:1px solid #304245;
-  border-bottom:1px solid #304245;
+  border-right:1px solid var(--tech-line);
+  border-bottom:1px solid var(--tech-line);
   text-align:left;
   vertical-align:middle;
 }
@@ -81,13 +81,13 @@
 .shorturl-test-table td:last-child{border-right:0}
 .shorturl-test-table tr:last-child td{border-bottom:0}
 .shorturl-test-table th{
-  background:#202b2e;
-  color:#9eb3b0;
+  background:var(--tech-panel-strong);
+  color:#a3adb6;
   font-size:11px;
   letter-spacing:.1em;
   text-transform:uppercase;
 }
-.shorturl-test-table td:first-child{color:#b8f0e7;font-weight:700;white-space:nowrap}
+.shorturl-test-table td:first-child{color:#b9c0ff;font-weight:700;white-space:nowrap}
 .shorturl-test-table code{color:#dce4e1;font:12px/1.45 Consolas,'Courier New',monospace;white-space:nowrap}
 .test-pass{
   display:inline-block;
@@ -114,12 +114,12 @@
 .source-result-head span{font-size:11px;font-weight:800;letter-spacing:.14em}
 .source-result-head strong{color:#eef2f0;font:400 35px/1 'Montserrat','Work Sans Local',sans-serif}
 .source-result--database .source-result-head span{color:#e8bb72}
-.source-result--cache .source-result-head span{color:#78e2d2}
-.source-bar{height:5px;margin:0 24px;background:#293638}
+.source-result--cache .source-result-head span{color:#b9c0ff}
+.source-bar{height:5px;margin:0 24px;background:var(--tech-panel-strong)}
 .source-bar i{display:block;height:100%;background:#e8bb72}
-.source-result--cache .source-bar i{background:#62d7c6}
+.source-result--cache .source-bar i{background:var(--tech-accent)}
 .source-result dl{margin:22px 24px}
-.source-result dl>div{display:grid;grid-template-columns:82px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid #314446}
+.source-result dl>div{display:grid;grid-template-columns:82px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--tech-line)}
 .source-result dl>div:last-child{border-bottom:0}
 .source-result dt{color:#899b99;font-size:11px;text-transform:uppercase;letter-spacing:.09em}
 .source-result dd{margin:0;color:#d8e2df;font:12px/1.45 Consolas,'Courier New',monospace;overflow-wrap:anywhere}
@@ -135,12 +135,12 @@
   margin-top:22px;
   padding:27px 30px;
   border-left:3px solid var(--tech-accent);
-  background:#1b2a2c;
+  background:#202234;
 }
-.shorturl-timing-note>strong{color:#8ae6d8;font:400 38px/1 'Montserrat','Work Sans Local',sans-serif}
+.shorturl-timing-note>strong{color:#b9c0ff;font:400 38px/1 'Montserrat','Work Sans Local',sans-serif}
 .shorturl-timing-note h3{margin:0 0 8px;color:#ebf0ee;font-size:19px}
 .shorturl-timing-note p{margin:0;color:#a1b0ae;font-size:14px;line-height:1.6}
-.shorturl-postman-code .code-keyword{color:#7ce1d2}
+.shorturl-postman-code .code-keyword{color:#aeb7ff}
 .shorturl-assertion-list{
   display:grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
