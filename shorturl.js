@@ -1,6 +1,6 @@
 
 
-const shorturlParams = new URLSearchParams(location.search);
+const shorturlParams = new URLSearchParams(window.CVRoute.params);
 const shorturlPage = document.querySelector('[data-project-page="shorturl"]');
 const isShorturlPage = shorturlParams.get("project") === "shorturl"
   && !shorturlParams.get("subproject");

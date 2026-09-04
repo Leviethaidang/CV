@@ -1,6 +1,6 @@
 
 
-const hashopReproductionParams = new URLSearchParams(location.search);
+const hashopReproductionParams = new URLSearchParams(window.CVRoute.params);
 const hashopReproductionPage = document.querySelector('[data-project-page="hashop-reproduction"]');
 const isHashopReproduction = hashopReproductionParams.get("project") === "hashop"
   && hashopReproductionParams.get("subproject") === "3-2";

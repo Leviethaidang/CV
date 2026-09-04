@@ -1,8 +1,8 @@
 
 
 const hashopPage = document.querySelector('[data-project-page="hashop"]');
-const hashopProjectSlug = new URLSearchParams(location.search).get("project");
-const hashopSubprojectSlug = new URLSearchParams(location.search).get("subproject");
+const hashopProjectSlug = new URLSearchParams(window.CVRoute.params).get("project");
+const hashopSubprojectSlug = new URLSearchParams(window.CVRoute.params).get("subproject");
 const isHashopOverview = hashopProjectSlug === "hashop" && !hashopSubprojectSlug;
 
 if (hashopPage) {

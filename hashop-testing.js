@@ -152,12 +152,12 @@ if (hashopTestingPage) {
       <div class="technical-actions">
         <a class="technical-action technical-action--primary" href="https://github.com/Leviethaidang/HaShop-QA" target="_blank" rel="noopener noreferrer"><span>View test source</span><span aria-hidden="true">↗</span></a>
         <a class="technical-action" href="assets/projects/hashop/qa-reports/authenticated/index.html" target="_blank" rel="noopener noreferrer"><span>View passing report</span><span aria-hidden="true">↗</span></a>
-        <a class="technical-action" href="placeholder.html?section=2&amp;project=hashop&amp;subproject=3-2"><span>Back to reproduction guide</span><span aria-hidden="true">←</span></a>
+        <a class="technical-action" href="HighlightedProjects/HaShop/ReproductionGuide/"><span>Back to reproduction guide</span><span aria-hidden="true">←</span></a>
       </div>
     </footer>`;
 }
 
-const hashopTestingParams = new URLSearchParams(location.search);
+const hashopTestingParams = new URLSearchParams(window.CVRoute.params);
 const isHashopTesting = hashopTestingParams.get("project") === "hashop"
   && hashopTestingParams.get("subproject") === "3-3";
 

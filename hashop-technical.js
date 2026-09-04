@@ -1,6 +1,6 @@
 
 
-const hashopTechnicalParams = new URLSearchParams(location.search);
+const hashopTechnicalParams = new URLSearchParams(window.CVRoute.params);
 const hashopTechnicalPage = document.querySelector('[data-project-page="hashop-technical"]');
 const isHashopTechnical = hashopTechnicalParams.get("project") === "hashop"
   && hashopTechnicalParams.get("subproject") === "3-1";

@@ -1,4 +1,4 @@
-const empireTestingParams = new URLSearchParams(location.search);
+const empireTestingParams = new URLSearchParams(window.CVRoute.params);
 const empireTestingPage = document.querySelector('[data-project-page="empire-run-testing"]');
 const isEmpireTesting = empireTestingParams.get('project') === 'empire-run'
   && empireTestingParams.get('subproject') === '1-2';

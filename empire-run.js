@@ -1,4 +1,4 @@
-const empireOverviewParams = new URLSearchParams(location.search);
+const empireOverviewParams = new URLSearchParams(window.CVRoute.params);
 const empireOverviewPage = document.querySelector('[data-project-page="empire-run"]');
 const isEmpireOverview = empireOverviewParams.get('project') === 'empire-run'
   && !empireOverviewParams.get('subproject');

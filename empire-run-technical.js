@@ -1,4 +1,4 @@
-const empireTechnicalParams = new URLSearchParams(location.search);
+const empireTechnicalParams = new URLSearchParams(window.CVRoute.params);
 const empireTechnicalPage = document.querySelector('[data-project-page="empire-run-technical"]');
 const isEmpireTechnical = empireTechnicalParams.get('project') === 'empire-run'
   && empireTechnicalParams.get('subproject') === '1-1';
