@@ -18,9 +18,3 @@ opens `/personalinformation/`. Nested paths also work under GitHub Pages' `/CV/`
 - `styles.css`: responsive visual system
 - `app.js`: sidebar search, project navigation and mobile menu
 - `assets/avatar.jpg`: profile photo from the provided reference project
-
-## Publishing
-
-Pushing `main` runs the GitHub Pages workflow. It builds and checks the site,
-then uploads only `dist/`; templates and build scripts are not public web pages.
-The old `placeholder.html?section=...` URLs are no longer supported.
